@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dresses Collection - Sewa by Nessvia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dress.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Playfair+Display+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        GET 5% OFF ON YOUR FIRST RENT. USE: "SEWABYN3SVIA" AT CHECKOUT
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Sewa by Nessvia</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="new-arrivals.html">New Arrivals</a></li>
+            <li><a href="highlights.html">Highlights</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn active">Categories <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="all-collection.html">All Collection</a>
+                    <a href="one-set.html">One Set</a>
+                    <a href="dress.html" class="active">Dress</a>
+                    <a href="top.html">Top</a>
+                    <a href="jumpsuit.html">Jump Suit</a>
+                </div>
+            </li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <div class="nav-right">
+            <input type="text" class="search-bar" placeholder="Search dress...">
+            <div class="nav-icons">
+                <a href="cart.html" class="nav-icon-link">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <a href="wishlist.html" class="nav-icon-link">
+                    <i class="fas fa-heart"></i>
+                </a>
+                <a href="login.html" class="nav-icon-link">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <div class="dress-banner">
+        <div class="banner-overlay">
+            <div class="banner-content">
+                <h1>Dresses Collection</h1>
+                <p>Discover our elegant dresses for every special occasion</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <section class="dress-section">
+        <div class="dress-container">
+            <!-- Sidebar Filter -->
+            <div class="filter-sidebar">
+                <div class="filter-header">
+                    <h3><i class="fas fa-filter"></i> Filters</h3>
+                    <button class="clear-filters">Clear All</button>
+                </div>
+
+                <!-- Color Filter -->
+                <div class="filter-group">
+                    <h4 class="filter-title">Color</h4>
+                    <div class="color-filters">
+                        <label class="color-option">
+                            <input type="checkbox" name="color" value="pink">
+                            <span class="color-checkbox pink"></span>
+                            <span class="color-label">Pink</span>
+                            <span class="color-count">(8)</span>
+                        </label>
+                        <label class="color-option">
+                            <input type="checkbox" name="color" value="blue">
+                            <span class="color-checkbox blue"></span>
+                            <span class="color-label">Blue</span>
+                            <span class="color-count">(6)</span>
+                        </label>
+                        <label class="color-option">
+                            <input type="checkbox" name="color" value="black">
+                            <span class="color-checkbox black"></span>
+                            <span class="color-label">Black</span>
+                            <span class="color-count">(5)</span>
+                        </label>
+                        <label class="color-option">
+                            <input type="checkbox" name="color" value="white">
+                            <span class="color-checkbox white"></span>
+                            <span class="color-label">White</span>
+                            <span class="color-count">(4)</span>
+                        </label>
+                        <label class="color-option">
+                            <input type="checkbox" name="color" value="red">
+                            <span class="color-checkbox red"></span>
+                            <span class="color-label">Red</span>
+                            <span class="color-count">(3)</span>
+                        </label>
+                        <label class="color-option">
+                            <input type="checkbox" name="color" value="green">
+                            <span class="color-checkbox green"></span>
+                            <span class="color-label">Green</span>
+                            <span class="color-count">(2)</span>
+                        </label>
+                        <label class="color-option">
+                            <input type="checkbox" name="color" value="gold">
+                            <span class="color-checkbox gold"></span>
+                            <span class="color-label">Gold</span>
+                            <span class="color-count">(2)</span>
+                        </label>
+                        <label class="color-option">
+                            <input type="checkbox" name="color" value="purple">
+                            <span class="color-checkbox purple"></span>
+                            <span class="color-label">Purple</span>
+                            <span class="color-count">(1)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Size Filter -->
+                <div class="filter-group">
+                    <h4 class="filter-title">Size</h4>
+                    <div class="size-filters">
+                        <label class="size-filter-option">
+                            <input type="checkbox" name="size" value="xs">
+                            <span class="size-checkbox">XS</span>
+                        </label>
+                        <label class="size-filter-option">
+                            <input type="checkbox" name="size" value="s">
+                            <span class="size-checkbox">S</span>
+                        </label>
+                        <label class="size-filter-option">
+                            <input type="checkbox" name="size" value="m">
+                            <span class="size-checkbox">M</span>
+                        </label>
+                        <label class="size-filter-option">
+                            <input type="checkbox" name="size" value="l">
+                            <span class="size-checkbox">L</span>
+                        </label>
+                        <label class="size-filter-option">
+                            <input type="checkbox" name="size" value="xl">
+                            <span class="size-checkbox">XL</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Price Filter -->
+                <div class="filter-group">
+                    <h4 class="filter-title">Price Range</h4>
+                    <div class="price-filter">
+                        <div class="price-inputs">
+                            <input type="number" class="price-input" placeholder="Min" id="minPrice" min="0" max="1000000" value="0">
+                            <span class="price-separator">-</span>
+                            <input type="number" class="price-input" placeholder="Max" id="maxPrice" min="0" max="1000000" value="1000000">
+                        </div>
+                        <input type="range" class="price-slider" min="0" max="1000000" value="1000000" id="priceSlider">
+                        <div class="price-labels">
+                            <span>Rp 0</span>
+                            <span>Rp 1,000,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Occasion Filter -->
+                <div class="filter-group">
+                    <h4 class="filter-title">Occasion</h4>
+                    <div class="occasion-filters">
+                        <label class="occasion-option">
+                            <input type="checkbox" name="occasion" value="wedding">
+                            <span class="occasion-checkbox"></span>
+                            <span class="occasion-label">Wedding</span>
+                        </label>
+                        <label class="occasion-option">
+                            <input type="checkbox" name="occasion" value="party">
+                            <span class="occasion-checkbox"></span>
+                            <span class="occasion-label">Party</span>
+                        </label>
+                        <label class="occasion-option">
+                            <input type="checkbox" name="occasion" value="formal">
+                            <span class="occasion-checkbox"></span>
+                            <span class="occasion-label">Formal</span>
+                        </label>
+                        <label class="occasion-option">
+                            <input type="checkbox" name="occasion" value="casual">
+                            <span class="occasion-checkbox"></span>
+                            <span class="occasion-label">Casual</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button class="apply-filters">Apply Filters</button>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="dress-main">
+                <!-- Header with title and sort -->
+                <div class="dress-header">
+                    <div class="dress-title-section">
+                        <h2 class="dress-title">Dresses</h2>
+                        <div class="dress-line"></div>
+                        <div class="dress-categories">
+                            <span class="dress-category active" data-color="all">All Colors</span>
+                            <span class="dress-category" data-color="pink">Pink</span>
+                            <span class="dress-category" data-color="blue">Blue</span>
+                            <span class="dress-category" data-color="black">Black</span>
+                            <span class="dress-category" data-color="white">White</span>
+                            <span class="dress-category" data-color="red">Red</span>
+                        </div>
+                    </div>
+                    <div class="dress-sort">
+                        <span class="sort-label">Sort by:</span>
+                        <select class="sort-select">
+                            <option value="featured">Featured</option>
+                            <option value="newest">Newest</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="popular">Most Popular</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="dress-grid">
+                    <!-- Pink Dresses -->
+                    <div class="product-card" data-color="pink" data-price="450000">
+                        <img src="https://i.ibb.co.com/HfntFTFB/Snap-Insta-to-468351173-17972543819798119-6275692406861753976-n.jpg" alt="Charlotte Dress" class="product-image">
+                        <div class="product-info">
+                            <div class="product-header">
+                                <h3 class="product-name">CHARLOTTE DRESS BY SOGNARE</h3>
+                                <i class="far fa-heart heart-icon"></i>
+                            </div>
+                            <p class="product-price">Rp 450,000.00/4 Days</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="size-options">
+                                <span class="size-option unavailable">S</span>
+                                <span class="size-option available">M</span>
+                                <span class="size-option unavailable">L</span>
+                                <span class="size-option unavailable">XL</span>
+                                <span class="size-option unavailable">XXL</span>
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart">Add to cart</button>
+                                <button class="rent-now">Rent now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-color="pink" data-price="550000">
+                        <img src="https://i.ibb.co.com/0jqYJ0X8/Whats-App-Image-2024-01-15-at-10-30-45.jpg" alt="Blush Pink Gown" class="product-image">
+                        <div class="product-info">
+                            <div class="product-header">
+                                <h3 class="product-name">BLUSH PINK EVENING GOWN</h3>
+                                <i class="far fa-heart heart-icon"></i>
+                            </div>
+                            <p class="product-price">Rp 550,000.00/4 Days</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="size-options">
+                                <span class="size-option available">S</span>
+                                <span class="size-option available">M</span>
+                                <span class="size-option available">L</span>
+                                <span class="size-option unavailable">XL</span>
+                                <span class="size-option unavailable">XXL</span>
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart">Add to cart</button>
+                                <button class="rent-now">Rent now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blue Dresses -->
+                    <div class="product-card" data-color="blue" data-price="520000">
+                        <img src="https://i.ibb.co.com/9qjGn24H/Whats-App-Image-2024-01-15-at-10-30-47.jpg" alt="Royal Blue Dress" class="product-image">
+                        <div class="product-info">
+                            <div class="product-header">
+                                <h3 class="product-name">ROYAL BLUE EVENING DRESS</h3>
+                                <i class="heart-icon fas fa-heart"></i>
+                            </div>
+                            <p class="product-price">Rp 520,000.00/4 Days</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="size-options">
+                                <span class="size-option available">XS</span>
+                                <span class="size-option available">S</span>
+                                <span class="size-option available">M</span>
+                                <span class="size-option unavailable">L</span>
+                                <span class="size-option unavailable">XL</span>
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart">Add to cart</button>
+                                <button class="rent-now">Rent now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-color="blue" data-price="380000">
+                        <img src="https://i.ibb.co.com/39NZRrj0/Snap-Insta-to-458452897-1022587182685384-8479958835633264582-n.jpg" alt="Leighton Dress" class="product-image">
+                        <div class="product-info">
+                            <div class="product-header">
+                                <h3 class="product-name">LEIGHTON DRESS BY COMA LABEL</h3>
+                                <i class="far fa-heart heart-icon"></i>
+                            </div>
+                            <p class="product-price">Rp 175,000.00/4 Days</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="size-options">
+                                <span class="size-option available">S</span>
+                                <span class="size-option unavailable">M</span>
+                                <span class="size-option unavailable">L</span>
+                                <span class="size-option unavailable">XL</span>
+                                <span class="size-option unavailable">XXL</span>
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart">Add to cart</button>
+                                <button class="rent-now">Rent now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Black Dresses -->
+                    <div class="product-card" data-color="black" data-price="580000">
+                        <img src="https://i.ibb.co.com/zPhJZbhR/Whats-App-Image-2024-01-15-at-10-30-48.jpg" alt="Black Sequin Dress" class="product-image">
+                        <div class="product-info">
+                            <div class="product-header">
+                                <h3 class="product-name">BLACK SEQUIN PARTY DRESS</h3>
+                                <i class="far fa-heart heart-icon"></i>
+                            </div>
+                            <p class="product-price">Rp 580,000.00/4 Days</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="size-options">
+                                <span class="size-option available">S</span>
+                                <span class="size-option available">M</span>
+                                <span class="size-option unavailable">L</span>
+                                <span class="size-option unavailable">XL</span>
+                                <span class="size-option unavailable">XXL</span>
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart">Add to cart</button>
+                                <button class="rent-now">Rent now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- White Dresses -->
+                    <div class="product-card" data-color="white" data-price="420000">
+                        <img src="https://i.ibb.co.com/67gXwgF6/Snap-Insta-to-465189735-894633029436148-8560698326578979982-n.jpg" alt="White Summer Dress" class="product-image">
+                        <div class="product-info">
+                            <div class="product-header">
+                                <h3 class="product-name">WHITE SUMMER DRESS BY FLORA</h3>
+                                <i class="far fa-heart heart-icon"></i>
+                            </div>
+                            <p class="product-price">Rp 175,000.00/4 Days</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="size-options">
+                                <span class="size-option unavailable">S</span>
+                                <span class="size-option available">M</span>
+                                <span class="size-option unavailable">L</span>
+                                <span class="size-option unavailable">XL</span>
+                                <span class="size-option unavailable">XXL</span>
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart">Add to cart</button>
+                                <button class="rent-now">Rent now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Red Dresses -->
+                    <div class="product-card" data-color="red" data-price="480000">
+                        <img src="https://i.ibb.co.com/0jqYJ0X8/Whats-App-Image-2024-01-15-at-10-30-45.jpg" alt="Red Velvet Dress" class="product-image">
+                        <div class="product-info">
+                            <div class="product-header">
+                                <h3 class="product-name">RED VELVET EVENING DRESS</h3>
+                                <i class="far fa-heart heart-icon"></i>
+                            </div>
+                            <p class="product-price">Rp 480,000.00/4 Days</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="size-options">
+                                <span class="size-option available">S</span>
+                                <span class="size-option available">M</span>
+                                <span class="size-option unavailable">L</span>
+                                <span class="size-option unavailable">XL</span>
+                                <span class="size-option unavailable">XXL</span>
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart">Add to cart</button>
+                                <button class="rent-now">Rent now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gold Dresses -->
+                    <div class="product-card" data-color="gold" data-price="650000">
+                        <img src="https://i.ibb.co.com/zPhJZbhR/Whats-App-Image-2024-01-15-at-10-30-48.jpg" alt="Gold Sequin Dress" class="product-image">
+                        <div class="product-info">
+                            <div class="product-header">
+                                <h3 class="product-name">GOLD SEQUIN GALA DRESS</h3>
+                                <i class="far fa-heart heart-icon"></i>
+                            </div>
+                            <p class="product-price">Rp 650,000.00/4 Days</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="size-options">
+                                <span class="size-option available">S</span>
+                                <span class="size-option available">M</span>
+                                <span class="size-option unavailable">L</span>
+                                <span class="size-option unavailable">XL</span>
+                                <span class="size-option unavailable">XXL</span>
+                            </div>
+                            <div class="button-container">
+                                <button class="add-to-cart">Add to cart</button>
+                                <button class="rent-now">Rent now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <span class="page-dots">...</span>
+                    <button class="page-btn">Next</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Color Guide -->
+    <div class="color-guide">
+        <div class="guide-container">
+            <h3>Color Selection Guide</h3>
+            <div class="guide-colors">
+                <div class="guide-item">
+                    <div class="guide-color pink"></div>
+                    <span>Pink - Romantic & Feminine</span>
+                </div>
+                <div class="guide-item">
+                    <div class="guide-color blue"></div>
+                    <span>Blue - Elegant & Sophisticated</span>
+                </div>
+                <div class="guide-item">
+                    <div class="guide-color black"></div>
+                    <span>Black - Classic & Timeless</span>
+                </div>
+                <div class="guide-item">
+                    <div class="guide-color white"></div>
+                    <span>White - Pure & Elegant</span>
+                </div>
+                <div class="guide-item">
+                    <div class="guide-color red"></div>
+                    <span>Red - Bold & Confident</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">Sewa by Nessvia</div>
+                <p style="color: #ccc; font-size: 14px;">Sewa.by.nessvia.id</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>CUSTOMER INFORMATION</h3>
+                <ul class="footer-links">
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="#">Shipping Information</a></li>
+                    <li><a href="#">Return Information</a></li>
+                    <li><a href="#">How to Rent</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>INFORMATION</h3>
+                <ul class="footer-links">
+                    <li><a href="https://wa.me/6287876928748">Whatsapp: +6287876928748</a></li>
+                    <li><a href="mailto:sewanessvia.id">Email: Sewanessvia.id</a></li>
+                </ul>
+                
+                <h3 style="margin-top: 30px;">FOLLOW US ON INSTAGRAM</h3>
+                <p style="color: #ccc; font-size: 14px;">@sewabynessvia</p>
+                <div class="social-icons" style="margin-top: 15px;">
+                    <a href="https://instagram.com/sewabynessvia" target="_blank" style="color: #ccc; margin-right: 15px;">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://tiktok.com/@sewabynessvia" target="_blank" style="color: #ccc;">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>SIGN UP AND SAVE</h3>
+                <p style="color: #ccc; font-size: 14px; margin-bottom: 15px;">Subscribe to get special offers, newest collection, and rent due.</p>
+                <div class="newsletter">
+                    <input type="email" placeholder="Enter your email...">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-links" style="display: flex; gap: 150px;">
+                <a href="#"><i class="fas fa-shipping-fast"></i> Shipping to Nusantara</a>
+                <a href="#"><i class="fas fa-diamond"></i> Classy Collections</a>
+                <a href="#"><i class="fas fa-credit-card"></i> Multiple Payment Methods</a>
+                <a href="#"><i class="fas fa-headset"></i> Fast Response Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Heart icon functionality
+            const heartIcons = document.querySelectorAll('.heart-icon');
+            
+            heartIcons.forEach(icon => {
+                icon.addEventListener('click', function() {
+                    if (this.classList.contains('far')) {
+                        this.classList.remove('far');
+                        this.classList.add('fas');
+                        this.style.color = '#ff1493';
+                        showNotification('Added to wishlist!');
+                    } else {
+                        this.classList.remove('fas');
+                        this.classList.add('far');
+                        this.style.color = '#000';
+                        showNotification('Removed from wishlist!');
+                    }
+                });
+            });
+            
+            // Add to cart functionality
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const productName = this.closest('.product-card').querySelector('.product-name').textContent;
+                    showNotification(`${productName} added to cart!`);
+                    
+                    // Add animation
+                    this.style.backgroundColor = '#4CAF50';
+                    this.style.color = 'white';
+                    this.textContent = 'Added!';
+                    
+                    setTimeout(() => {
+                        this.style.backgroundColor = '';
+                        this.style.color = '';
+                        this.textContent = 'Add to cart';
+                    }, 1500);
+                });
+            });
+            
+            // Rent now functionality
+            const rentNowButtons = document.querySelectorAll('.rent-now');
+            
+            rentNowButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const productName = this.closest('.product-card').querySelector('.product-name').textContent;
+                    showNotification(`Proceeding to rent: ${productName}`);
+                    
+                    const isLoggedIn = localStorage.getItem('isLoggedIn');
+                    if (isLoggedIn === 'true') {
+                        window.location.href = 'cart.html';
+                    } else {
+                        window.location.href = 'signup.html';
+                    }
+                });
+            });
+            
+            // Color filter functionality
+            const colorOptions = document.querySelectorAll('.color-option input');
+            const dressCategories = document.querySelectorAll('.dress-category');
+            const productCards = document.querySelectorAll('.product-card');
+            
+            // Color category click
+            dressCategories.forEach(category => {
+                category.addEventListener('click', function() {
+                    // Remove active class from all categories
+                    dressCategories.forEach(cat => cat.classList.remove('active'));
+                    // Add active class to clicked category
+                    this.classList.add('active');
+                    
+                    const color = this.getAttribute('data-color');
+                    
+                    // Filter products
+                    productCards.forEach(card => {
+                        if (color === 'all' || card.getAttribute('data-color') === color) {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'scale(1)';
+                            }, 50);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'scale(0.8)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+            
+            // Checkbox color filter
+            colorOptions.forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    filterProducts();
+                });
+            });
+            
+            // Size filter functionality
+            const sizeOptions = document.querySelectorAll('.size-filter-option input');
+            sizeOptions.forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    filterProducts();
+                });
+            });
+            
+            // Price filter functionality
+            const minPriceInput = document.getElementById('minPrice');
+            const maxPriceInput = document.getElementById('maxPrice');
+            const priceSlider = document.getElementById('priceSlider');
+            
+            minPriceInput.addEventListener('input', function() {
+                filterProducts();
+            });
+            
+            maxPriceInput.addEventListener('input', function() {
+                filterProducts();
+            });
+            
+            priceSlider.addEventListener('input', function() {
+                maxPriceInput.value = this.value;
+                filterProducts();
+            });
+            
+            // Occasion filter functionality
+            const occasionOptions = document.querySelectorAll('.occasion-option input');
+            occasionOptions.forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    filterProducts();
+                });
+            });
+            
+            // Apply filters button
+            const applyFiltersBtn = document.querySelector('.apply-filters');
+            applyFiltersBtn.addEventListener('click', function() {
+                filterProducts();
+                showNotification('Filters applied!');
+            });
+            
+            // Clear filters button
+            const clearFiltersBtn = document.querySelector('.clear-filters');
+            clearFiltersBtn.addEventListener('click', function() {
+                // Clear all checkboxes
+                document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+                    checkbox.checked = false;
+                });
+                
+                // Reset price inputs
+                minPriceInput.value = 0;
+                maxPriceInput.value = 1000000;
+                priceSlider.value = 1000000;
+                
+                // Reset to all categories
+                dressCategories.forEach(cat => cat.classList.remove('active'));
+                document.querySelector('.dress-category[data-color="all"]').classList.add('active');
+                
+                // Show all products
+                productCards.forEach(card => {
+                    card.style.display = 'block';
+                    card.style.opacity = '1';
+                    card.style.transform = 'scale(1)';
+                });
+                
+                showNotification('All filters cleared!');
+            });
+            
+            // Sort functionality
+            const sortSelect = document.querySelector('.sort-select');
+            sortSelect.addEventListener('change', function() {
+                const container = document.querySelector('.dress-grid');
+                const visibleCards = Array.from(productCards).filter(card => 
+                    card.style.display !== 'none'
+                );
+                
+                visibleCards.sort((a, b) => {
+                    const priceA = parseInt(a.getAttribute('data-price'));
+                    const priceB = parseInt(b.getAttribute('data-price'));
+                    
+                    switch(this.value) {
+                        case 'price-low':
+                            return priceA - priceB;
+                        case 'price-high':
+                            return priceB - priceA;
+                        case 'newest':
+                            // For demo, random sort for newest
+                            return Math.random() - 0.5;
+                        case 'popular':
+                            const ratingA = parseFloat(a.querySelector('.fa-star')?.parentElement?.textContent || '0');
+                            const ratingB = parseFloat(b.querySelector('.fa-star')?.parentElement?.textContent || '0');
+                            return ratingB - ratingA;
+                        default:
+                            return 0;
+                    }
+                });
+                
+                // Reorder cards
+                visibleCards.forEach(card => {
+                    container.appendChild(card);
+                });
+            });
+            
+            // Size selection in product cards
+            const sizeOptionsInCards = document.querySelectorAll('.size-option.available');
+            sizeOptionsInCards.forEach(option => {
+                option.addEventListener('click', function() {
+                    // Remove selected class from all sizes in this card
+                    const cardSizes = this.closest('.size-options').querySelectorAll('.size-option');
+                    cardSizes.forEach(size => size.classList.remove('selected'));
+                    
+                    // Add selected class to clicked size
+                    this.classList.add('selected');
+                    
+                    // Add visual feedback
+                    this.style.backgroundColor = '#000';
+                    this.style.color = '#fff';
+                    this.style.padding = '2px 12px';
+                    this.style.borderRadius = '3px';
+                });
+            });
+            
+            // Search functionality
+            const searchBar = document.querySelector('.search-bar');
+            if (searchBar) {
+                searchBar.addEventListener('input', function() {
+                    const searchTerm = this.value.toLowerCase();
+                    
+                    productCards.forEach(card => {
+                        const productName = card.querySelector('.product-name').textContent.toLowerCase();
+                        
+                        if (productName.includes(searchTerm) || searchTerm === '') {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            }
+            
+            // Pagination functionality
+            const pageButtons = document.querySelectorAll('.page-btn');
+            pageButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    pageButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    if (this.textContent !== 'Next' && this.textContent !== '...') {
+                        showNotification(`Loading page ${this.textContent}...`);
+                    }
+                });
+            });
+            
+            // Main filter function
+            function filterProducts() {
+                // Get selected colors
+                const selectedColors = Array.from(colorOptions)
+                    .filter(checkbox => checkbox.checked)
+                    .map(checkbox => checkbox.value);
+                
+                // Get selected sizes
+                const selectedSizes = Array.from(sizeOptions)
+                    .filter(checkbox => checkbox.checked)
+                    .map(checkbox => checkbox.value);
+                
+                // Get price range
+                const minPrice = parseInt(minPriceInput.value) || 0;
+                const maxPrice = parseInt(maxPriceInput.value) || 1000000;
+                
+                // Get selected occasions
+                const selectedOccasions = Array.from(occasionOptions)
+                    .filter(checkbox => checkbox.checked)
+                    .map(checkbox => checkbox.value);
+                
+                // Filter products
+                productCards.forEach(card => {
+                    const cardColor = card.getAttribute('data-color');
+                    const cardPrice = parseInt(card.getAttribute('data-price'));
+                    
+                    // Check if product passes all filters
+                    const passesColor = selectedColors.length === 0 || selectedColors.includes(cardColor);
+                    const passesPrice = cardPrice >= minPrice && cardPrice <= maxPrice;
+                    
+                    // For demo, we'll just use color and price filters
+                    // In real app, you'd also check size and occasion
+                    
+                    if (passesColor && passesPrice) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'scale(1)';
+                        }, 50);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            }
+            
+            // Helper function for notifications
+            function showNotification(message) {
+                // Create notification element
+                const notification = document.createElement('div');
+                notification.className = 'notification';
+                notification.innerHTML = `
+                    <i class="fas fa-check-circle"></i>
+                    <span>${message}</span>
+                `;
+                
+                // Add to body
+                document.body.appendChild(notification);
+                
+                // Show notification
+                setTimeout(() => {
+                    notification.classList.add('show');
+                }, 10);
+                
+                // Remove notification after 3 seconds
+                setTimeout(() => {
+                    notification.classList.remove('show');
+                    setTimeout(() => {
+                        notification.remove();
+                    }, 300);
+                }, 3000);
+            }
+            
+            // Mobile filter toggle (for responsive design)
+            const mobileFilterToggle = document.createElement('button');
+            mobileFilterToggle.className = 'mobile-filter-toggle';
+            mobileFilterToggle.innerHTML = '<i class="fas fa-filter"></i> Filters';
+            document.querySelector('.dress-header').prepend(mobileFilterToggle);
+            
+            mobileFilterToggle.addEventListener('click', function() {
+                document.querySelector('.filter-sidebar').classList.toggle('active');
+            });
+            
+            // Close mobile filter when clicking outside
+            document.addEventListener('click', function(event) {
+                const sidebar = document.querySelector('.filter-sidebar');
+                if (!sidebar.contains(event.target) && !mobileFilterToggle.contains(event.target)) {
+                    sidebar.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tops Collection - Sewa by Nessvia</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="top.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Playfair+Display+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      GET 5% OFF ON YOUR FIRST RENT. USE: "SEWABYN3SVIA" AT CHECKOUT
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <a href="index.html" class="logo">Sewa by Nessvia</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="new-arrivals.html">New Arrivals</a></li>
+        <li><a href="highlights.html">Highlights</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn active"
+            >Categories <i class="fas fa-chevron-down"></i
+          ></a>
+          <div class="dropdown-content">
+            <a href="all-collection.html">All Collection</a>
+            <a href="#one-set.html">One Set</a>
+            <a href="dress.html">Dress</a>
+            <a href="top.html" class="active">Top</a>
+            <a href="#jump-suit">Jump Suit</a>
+          </div>
+        </li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+      <div class="nav-right">
+        <input type="text" class="search-bar" placeholder="Search top..." />
+        <div class="nav-icons">
+          <a href="cart.html" class="nav-icon-link">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count" id="cartCountNav">0</span>
+          </a>
+          <a href="wishlist.html" class="nav-icon-link">
+            <i class="fas fa-heart"></i>
+          </a>
+          <a href="login.html" class="nav-icon-link">
+            <i class="fas fa-user"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <div class="top-banner">
+      <div class="banner-overlay">
+        <div class="banner-content">
+          <h1>Tops Collection</h1>
+          <p>Discover elegant tops for every style and occasion</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <section class="top-section">
+      <div class="top-container">
+        <!-- Sidebar Filter -->
+        <div class="filter-sidebar">
+          <div class="filter-header">
+            <h3><i class="fas fa-filter"></i> Filters</h3>
+            <button class="clear-filters">Clear All</button>
+          </div>
+
+          <!-- Color Filter -->
+          <div class="filter-group">
+            <h4 class="filter-title">Color</h4>
+            <div class="color-filters">
+              <label class="color-option">
+                <input type="checkbox" name="color" value="white" />
+                <span class="color-checkbox white"></span>
+                <span class="color-label">White</span>
+                <span class="color-count">(3)</span>
+              </label>
+              <label class="color-option">
+                <input type="checkbox" name="color" value="black" />
+                <span class="color-checkbox black"></span>
+                <span class="color-label">Black</span>
+                <span class="color-count">(2)</span>
+              </label>
+              <label class="color-option">
+                <input type="checkbox" name="color" value="pink" />
+                <span class="color-checkbox pink"></span>
+                <span class="color-label">Pink</span>
+                <span class="color-count">(2)</span>
+              </label>
+              <label class="color-option">
+                <input type="checkbox" name="color" value="blue" />
+                <span class="color-checkbox blue"></span>
+                <span class="color-label">Blue</span>
+                <span class="color-count">(1)</span>
+              </label>
+              <label class="color-option">
+                <input type="checkbox" name="color" value="cream" />
+                <span class="color-checkbox cream"></span>
+                <span class="color-label">Cream</span>
+                <span class="color-count">(1)</span>
+              </label>
+              <label class="color-option">
+                <input type="checkbox" name="color" value="red" />
+                <span class="color-checkbox red"></span>
+                <span class="color-label">Red</span>
+                <span class="color-count">(1)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Size Filter -->
+          <div class="filter-group">
+            <h4 class="filter-title">Size</h4>
+            <div class="size-filters">
+              <label class="size-filter-option">
+                <input type="checkbox" name="size" value="xs" />
+                <span class="size-checkbox">XS</span>
+              </label>
+              <label class="size-filter-option">
+                <input type="checkbox" name="size" value="s" />
+                <span class="size-checkbox">S</span>
+              </label>
+              <label class="size-filter-option">
+                <input type="checkbox" name="size" value="m" />
+                <span class="size-checkbox">M</span>
+              </label>
+              <label class="size-filter-option">
+                <input type="checkbox" name="size" value="l" />
+                <span class="size-checkbox">L</span>
+              </label>
+              <label class="size-filter-option">
+                <input type="checkbox" name="size" value="xl" />
+                <span class="size-checkbox">XL</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Price Filter -->
+          <div class="filter-group">
+            <h4 class="filter-title">Price Range</h4>
+            <div class="price-filter">
+              <div class="price-inputs">
+                <input
+                  type="number"
+                  class="price-input"
+                  placeholder="Min"
+                  id="minPrice"
+                  min="0"
+                  max="500000"
+                  value="0"
+                />
+                <span class="price-separator">-</span>
+                <input
+                  type="number"
+                  class="price-input"
+                  placeholder="Max"
+                  id="maxPrice"
+                  min="0"
+                  max="500000"
+                  value="500000"
+                />
+              </div>
+              <input
+                type="range"
+                class="price-slider"
+                min="0"
+                max="500000"
+                value="500000"
+                id="priceSlider"
+              />
+              <div class="price-labels">
+                <span>Rp 0</span>
+                <span>Rp 500,000</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Style Filter -->
+          <div class="filter-group">
+            <h4 class="filter-title">Style</h4>
+            <div class="style-filters">
+              <label class="style-option">
+                <input type="checkbox" name="style" value="casual" />
+                <span class="style-checkbox"></span>
+                <span class="style-label">Casual</span>
+              </label>
+              <label class="style-option">
+                <input type="checkbox" name="style" value="formal" />
+                <span class="style-checkbox"></span>
+                <span class="style-label">Formal</span>
+              </label>
+              <label class="style-option">
+                <input type="checkbox" name="style" value="party" />
+                <span class="style-checkbox"></span>
+                <span class="style-label">Party</span>
+              </label>
+              <label class="style-option">
+                <input type="checkbox" name="style" value="evening" />
+                <span class="style-checkbox"></span>
+                <span class="style-label">Evening</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Material Filter -->
+          <div class="filter-group">
+            <h4 class="filter-title">Material</h4>
+            <div class="material-filters">
+              <label class="material-option">
+                <input type="checkbox" name="material" value="silk" />
+                <span class="material-checkbox"></span>
+                <span class="material-label">Silk</span>
+              </label>
+              <label class="material-option">
+                <input type="checkbox" name="material" value="cotton" />
+                <span class="material-checkbox"></span>
+                <span class="material-label">Cotton</span>
+              </label>
+              <label class="material-option">
+                <input type="checkbox" name="material" value="lace" />
+                <span class="material-checkbox"></span>
+                <span class="material-label">Lace</span>
+              </label>
+              <label class="material-option">
+                <input type="checkbox" name="material" value="satin" />
+                <span class="material-checkbox"></span>
+                <span class="material-label">Satin</span>
+              </label>
+            </div>
+          </div>
+
+          <button class="apply-filters">Apply Filters</button>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="top-main">
+          <!-- Header with title and sort -->
+          <div class="top-header">
+            <div class="top-title-section">
+              <h2 class="top-title">Tops</h2>
+              <div class="top-line"></div>
+              <div class="top-categories">
+                <span class="top-category active" data-color="all"
+                  >All Colors</span
+                >
+                <span class="top-category" data-color="white">White</span>
+                <span class="top-category" data-color="black">Black</span>
+                <span class="top-category" data-color="pink">Pink</span>
+                <span class="top-category" data-color="blue">Blue</span>
+                <span class="top-category" data-color="cream">Cream</span>
+              </div>
+            </div>
+            <div class="top-sort">
+              <span class="sort-label">Sort by:</span>
+              <select class="sort-select">
+                <option value="featured">Featured</option>
+                <option value="newest">Newest</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="popular">Most Popular</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Product Grid -->
+          <div class="top-grid">
+            <!-- White Tops -->
+            <div
+              class="product-card"
+              data-color="white"
+              data-price="280000"
+              data-style="formal"
+              data-material="silk"
+              data-id="top1"
+            >
+              <img
+                src="https://i.ibb.co.com/6y9sKwSy/Whats-App-Image-2024-01-15-at-10-30-47-1.jpg"
+                alt="Designer Silk Top"
+                class="product-image"
+              />
+              <div class="product-info">
+                <div class="product-header">
+                  <h3 class="product-name">DESIGNER SILK TOP BY LUXE</h3>
+                  <i class="far fa-heart heart-icon"></i>
+                </div>
+                <p class="product-price">Rp 280,000.00/4 Days</p>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="size-options">
+                  <span class="size-option available" data-size="S">S</span>
+                  <span class="size-option available" data-size="M">M</span>
+                  <span class="size-option available" data-size="L">L</span>
+                  <span class="size-option unavailable">XL</span>
+                  <span class="size-option unavailable">XXL</span>
+                </div>
+                <div class="button-container">
+                  <button class="add-to-cart" data-product-id="top1">Add to cart</button>
+                  <button class="rent-now">Rent now</button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="product-card"
+              data-color="white"
+              data-price="220000"
+              data-style="formal"
+              data-material="lace"
+              data-id="top2"
+            >
+              <img
+                src="https://i.ibb.co.com/HfntFTFB/Snap-Insta-to-468351173-17972543819798119-6275692406861753976-n.jpg"
+                alt="Elegant Lace Top"
+                class="product-image"
+              />
+              <div class="product-info">
+                <div class="product-header">
+                  <h3 class="product-name">ELEGANT LACE TOP</h3>
+                  <i class="far fa-heart heart-icon"></i>
+                </div>
+                <p class="product-price">Rp 220,000.00/4 Days</p>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="size-options">
+                  <span class="size-option unavailable">S</span>
+                  <span class="size-option available" data-size="M">M</span>
+                  <span class="size-option available" data-size="L">L</span>
+                  <span class="size-option unavailable">XL</span>
+                  <span class="size-option unavailable">XXL</span>
+                </div>
+                <div class="button-container">
+                  <button class="add-to-cart" data-product-id="top2">Add to cart</button>
+                  <button class="rent-now">Rent now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Black Tops -->
+            <div
+              class="product-card"
+              data-color="black"
+              data-price="320000"
+              data-style="party"
+              data-material="satin"
+              data-id="top3"
+            >
+              <img
+                src="https://i.ibb.co.com/zPhJZbhR/Whats-App-Image-2024-01-15-at-10-30-48.jpg"
+                alt="Black Sequin Top"
+                class="product-image"
+              />
+              <div class="product-info">
+                <div class="product-header">
+                  <h3 class="product-name">BLACK SEQUIN TOP</h3>
+                  <i class="heart-icon fas fa-heart"></i>
+                </div>
+                <p class="product-price">Rp 320,000.00/4 Days</p>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="size-options">
+                  <span class="size-option available" data-size="S">S</span>
+                  <span class="size-option available" data-size="M">M</span>
+                  <span class="size-option unavailable">L</span>
+                  <span class="size-option unavailable">XL</span>
+                  <span class="size-option unavailable">XXL</span>
+                </div>
+                <div class="button-container">
+                  <button class="add-to-cart" data-product-id="top3">Add to cart</button>
+                  <button class="rent-now">Rent now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pink Tops -->
+            <div
+              class="product-card"
+              data-color="pink"
+              data-price="190000"
+              data-style="casual"
+              data-material="cotton"
+              data-id="top4"
+            >
+              <img
+                src="https://i.ibb.co.com/0jqYJ0X8/Whats-App-Image-2024-01-15-at-10-30-45.jpg"
+                alt="Pink Casual Top"
+                class="product-image"
+              />
+              <div class="product-info">
+                <div class="product-header">
+                  <h3 class="product-name">PINK CASUAL TOP</h3>
+                  <i class="far fa-heart heart-icon"></i>
+                </div>
+                <p class="product-price">Rp 190,000.00/4 Days</p>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="size-options">
+                  <span class="size-option available" data-size="S">S</span>
+                  <span class="size-option available" data-size="M">M</span>
+                  <span class="size-option available" data-size="L">L</span>
+                  <span class="size-option unavailable">XL</span>
+                  <span class="size-option unavailable">XXL</span>
+                </div>
+                <div class="button-container">
+                  <button class="add-to-cart" data-product-id="top4">Add to cart</button>
+                  <button class="rent-now">Rent now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Blue Tops -->
+            <div
+              class="product-card"
+              data-color="blue"
+              data-price="270000"
+              data-style="evening"
+              data-material="satin"
+              data-id="top5"
+            >
+              <img
+                src="https://i.ibb.co.com/9qjGn24H/Whats-App-Image-2024-01-15-at-10-30-47.jpg"
+                alt="Blue Evening Top"
+                class="product-image"
+              />
+              <div class="product-info">
+                <div class="product-header">
+                  <h3 class="product-name">BLUE EVENING TOP</h3>
+                  <i class="far fa-heart heart-icon"></i>
+                </div>
+                <p class="product-price">Rp 270,000.00/4 Days</p>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="size-options">
+                  <span class="size-option unavailable">S</span>
+                  <span class="size-option unavailable">M</span>
+                  <span class="size-option available" data-size="L">L</span>
+                  <span class="size-option unavailable">XL</span>
+                  <span class="size-option unavailable">XXL</span>
+                </div>
+                <div class="button-container">
+                  <button class="add-to-cart" data-product-id="top5">Add to cart</button>
+                  <button class="rent-now">Rent now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cream Tops -->
+            <div
+              class="product-card"
+              data-color="cream"
+              data-price="240000"
+              data-style="casual"
+              data-material="cotton"
+              data-id="top6"
+            >
+              <img
+                src="https://i.ibb.co.com/39NZRrj0/Snap-Insta-to-458452897-1022587182685384-8479958835633264582-n.jpg"
+                alt="Cream Casual Top"
+                class="product-image"
+              />
+              <div class="product-info">
+                <div class="product-header">
+                  <h3 class="product-name">CREAM CASUAL TOP</h3>
+                  <i class="heart-icon fas fa-heart"></i>
+                </div>
+                <p class="product-price">Rp 240,000.00/4 Days</p>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="size-options">
+                  <span class="size-option available" data-size="S">S</span>
+                  <span class="size-option unavailable">M</span>
+                  <span class="size-option unavailable">L</span>
+                  <span class="size-option unavailable">XL</span>
+                  <span class="size-option unavailable">XXL</span>
+                </div>
+                <div class="button-container">
+                  <button class="add-to-cart" data-product-id="top6">Add to cart</button>
+                  <button class="rent-now">Rent now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- White Top 3 -->
+            <div
+              class="product-card"
+              data-color="white"
+              data-price="210000"
+              data-style="casual"
+              data-material="cotton"
+              data-id="top7"
+            >
+              <img
+                src="https://i.ibb.co.com/67gXwgF6/Snap-Insta-to-465189735-894633029436148-8560698326578979982-n.jpg"
+                alt="White Casual Top"
+                class="product-image"
+              />
+              <div class="product-info">
+                <div class="product-header">
+                  <h3 class="product-name">WHITE CASUAL TOP</h3>
+                  <i class="far fa-heart heart-icon"></i>
+                </div>
+                <p class="product-price">Rp 210,000.00/4 Days</p>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="size-options">
+                  <span class="size-option unavailable">S</span>
+                  <span class="size-option available" data-size="M">M</span>
+                  <span class="size-option unavailable">L</span>
+                  <span class="size-option unavailable">XL</span>
+                  <span class="size-option unavailable">XXL</span>
+                </div>
+                <div class="button-container">
+                  <button class="add-to-cart" data-product-id="top7">Add to cart</button>
+                  <button class="rent-now">Rent now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pink Top 2 -->
+            <div
+              class="product-card"
+              data-color="pink"
+              data-price="260000"
+              data-style="party"
+              data-material="satin"
+              data-id="top8"
+            >
+              <img
+                src="https://i.ibb.co.com/ym0zCh2c/Snap-Insta-to-559737709-18247966546288018-6677574410924182948-n.webp"
+                alt="Pink Party Top"
+                class="product-image"
+              />
+              <div class="product-info">
+                <div class="product-header">
+                  <h3 class="product-name">PINK PARTY TOP</h3>
+                  <i class="far fa-heart heart-icon"></i>
+                </div>
+                <p class="product-price">Rp 260,000.00/4 Days</p>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="size-options">
+                  <span class="size-option unavailable">S</span>
+                  <span class="size-option unavailable">M</span>
+                  <span class="size-option available" data-size="L">L</span>
+                  <span class="size-option unavailable">XL</span>
+                  <span class="size-option unavailable">XXL</span>
+                </div>
+                <div class="button-container">
+                  <button class="add-to-cart" data-product-id="top8">Add to cart</button>
+                  <button class="rent-now">Rent now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="pagination">
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <span class="page-dots">...</span>
+            <button class="page-btn">Next</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Color Guide -->
+    <div class="color-guide">
+      <div class="guide-container">
+        <h3>Top Collection Features</h3>
+        <div class="guide-features">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-palette"></i>
+            </div>
+            <h4>Variety of Colors</h4>
+            <p>
+              From classic white to vibrant pink, find the perfect color for
+              your style
+            </p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-tshirt"></i>
+            </div>
+            <h4>Multiple Styles</h4>
+            <p>Casual, formal, party, and evening tops for every occasion</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-ruler-combined"></i>
+            </div>
+            <h4>Perfect Fit</h4>
+            <p>Available in sizes XS to XL for the perfect fit</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Premium Quality</h4>
+            <p>
+              High-quality materials including silk, cotton, lace, and satin
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">Sewa by Nessvia</div>
+          <p style="color: #ccc; font-size: 14px">Sewa.by.nessvia.id</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>CUSTOMER INFORMATION</h3>
+          <ul class="footer-links">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="#">Shipping Information</a></li>
+            <li><a href="#">Return Information</a></li>
+            <li><a href="#">How to Rent</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>INFORMATION</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="https://wa.me/6287876928748">Whatsapp: +6287876928748</a>
+            </li>
+            <li><a href="mailto:sewanessvia.id">Email: Sewanessvia.id</a></li>
+          </ul>
+
+          <h3 style="margin-top: 30px">FOLLOW US ON INSTAGRAM</h3>
+          <p style="color: #ccc; font-size: 14px">@sewabynessvia</p>
+          <div class="social-icons" style="margin-top: 15px">
+            <a
+              href="https://instagram.com/sewabynessvia"
+              target="_blank"
+              style="color: #ccc; margin-right: 15px"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://tiktok.com/@sewabynessvia"
+              target="_blank"
+              style="color: #ccc"
+            >
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>SIGN UP AND SAVE</h3>
+          <p style="color: #ccc; font-size: 14px; margin-bottom: 15px">
+            Subscribe to get special offers, newest collection, and rent due.
+          </p>
+          <div class="newsletter">
+            <input type="email" placeholder="Enter your email..." />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-links" style="display: flex; gap: 150px">
+          <a href="#"
+            ><i class="fas fa-shipping-fast"></i> Shipping to Nusantara</a
+          >
+          <a href="#"><i class="fas fa-diamond"></i> Classy Collections</a>
+          <a href="#"
+            ><i class="fas fa-credit-card"></i> Multiple Payment Methods</a
+          >
+          <a href="#"><i class="fas fa-headset"></i> Fast Response Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Cart Preview Modal -->
+    <div class="cart-preview-modal" id="cartPreviewModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3><i class="fas fa-shopping-cart"></i> Added to Cart</h3>
+          <button class="close-modal" id="closePreviewModal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="preview-item">
+            <img id="previewImage" src="" alt="">
+            <div class="preview-info">
+              <h4 id="previewName"></h4>
+              <p id="previewPrice"></p>
+              <p id="previewSize"></p>
+            </div>
+          </div>
+          <div class="preview-actions">
+            <button class="continue-shopping-btn" id="continueShoppingBtn">
+              Continue Shopping
+            </button>
+            <a href="cart.html" class="view-cart-btn">
+              <i class="fas fa-shopping-cart"></i> View Cart
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Load cart from localStorage
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        
+        // Update cart count in navbar
+        function updateCartCount() {
+          const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+          document.getElementById('cartCountNav').textContent = totalItems;
+        }
+        
+        // Initialize cart count
+        updateCartCount();
+        
+        // Heart icon functionality
+        const heartIcons = document.querySelectorAll('.heart-icon');
+
+        heartIcons.forEach((icon) => {
+          icon.addEventListener('click', function () {
+            if (this.classList.contains('far')) {
+              this.classList.remove('far');
+              this.classList.add('fas');
+              this.style.color = '#ff1493';
+              showNotification('Added to wishlist!');
+            } else {
+              this.classList.remove('fas');
+              this.classList.add('far');
+              this.style.color = '#000';
+              showNotification('Removed from wishlist!');
+            }
+          });
+        });
+
+        // Add to cart functionality
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+        addToCartButtons.forEach((button) => {
+          button.addEventListener('click', function () {
+            const productCard = this.closest('.product-card');
+            const productId = this.getAttribute('data-product-id');
+            const productName = productCard.querySelector('.product-name').textContent;
+            const productPrice = parseInt(productCard.getAttribute('data-price'));
+            const productColor = productCard.getAttribute('data-color');
+            const productImage = productCard.querySelector('.product-image').src;
+            
+            // Check if size is selected
+            const selectedSizeElement = productCard.querySelector('.size-option.selected');
+            let selectedSize = "Not specified";
+            
+            if (selectedSizeElement) {
+              selectedSize = selectedSizeElement.getAttribute('data-size') || selectedSizeElement.textContent;
+            } else {
+              // If no size selected, use first available size
+              const availableSizes = productCard.querySelectorAll('.size-option.available');
+              if (availableSizes.length > 0) {
+                selectedSize = availableSizes[0].getAttribute('data-size') || availableSizes[0].textContent;
+              }
+            }
+            
+            // Create item object
+            const item = {
+              id: productId,
+              name: productName,
+              price: productPrice,
+              color: productColor,
+              image: productImage,
+              size: selectedSize,
+              quantity: 1
+            };
+            
+            // Check if item already exists in cart
+            const existingItemIndex = cart.findIndex(cartItem => 
+              cartItem.id === item.id && cartItem.size === item.size
+            );
+            
+            if (existingItemIndex !== -1) {
+              // Increase quantity if item already exists
+              cart[existingItemIndex].quantity += 1;
+            } else {
+              // Add new item to cart
+              cart.push(item);
+            }
+            
+            // Save to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+            
+            // Update cart count
+            updateCartCount();
+            
+            // Show success message
+            showNotification(`${productName} added to cart!`);
+            
+            // Show cart preview modal
+            showCartPreview(item);
+            
+            // Add animation to button
+            this.style.backgroundColor = '#4CAF50';
+            this.style.color = 'white';
+            this.innerHTML = '<i class="fas fa-check"></i> Added!';
+            
+            setTimeout(() => {
+              this.style.backgroundColor = '';
+              this.style.color = '';
+              this.innerHTML = 'Add to cart';
+            }, 2000);
+          });
+        });
+
+        // Size selection in product cards
+        const sizeOptionsInCards = document.querySelectorAll(
+          '.size-option.available'
+        );
+        sizeOptionsInCards.forEach((option) => {
+          option.addEventListener('click', function () {
+            // Remove selected class from all sizes in this card
+            const cardSizes =
+              this.closest('.size-options').querySelectorAll('.size-option');
+            cardSizes.forEach((size) => size.classList.remove('selected'));
+
+            // Add selected class to clicked size
+            this.classList.add('selected');
+
+            // Add visual feedback
+            this.style.backgroundColor = '#000';
+            this.style.color = '#fff';
+            this.style.padding = '2px 12px';
+            this.style.borderRadius = '3px';
+          });
+        });
+
+        // Rent now functionality
+        const rentNowButtons = document.querySelectorAll('.rent-now');
+
+        rentNowButtons.forEach((button) => {
+          button.addEventListener('click', function () {
+            const productName =
+              this.closest('.product-card').querySelector(
+                '.product-name'
+              ).textContent;
+            showNotification(`Proceeding to rent: ${productName}`);
+
+            const isLoggedIn = localStorage.getItem('isLoggedIn');
+            if (isLoggedIn === 'true') {
+              window.location.href = 'cart.html';
+            } else {
+              window.location.href = 'signup.html';
+            }
+          });
+        });
+
+        // Color filter functionality
+        const colorOptions = document.querySelectorAll('.color-option input');
+        const topCategories = document.querySelectorAll('.top-category');
+        const productCards = document.querySelectorAll('.product-card');
+
+        // Color category click
+        topCategories.forEach((category) => {
+          category.addEventListener('click', function () {
+            // Remove active class from all categories
+            topCategories.forEach((cat) => cat.classList.remove('active'));
+            // Add active class to clicked category
+            this.classList.add('active');
+
+            const color = this.getAttribute('data-color');
+
+            // Filter products
+            productCards.forEach((card) => {
+              if (
+                color === 'all' ||
+                card.getAttribute('data-color') === color
+              ) {
+                card.style.display = 'block';
+                setTimeout(() => {
+                  card.style.opacity = '1';
+                  card.style.transform = 'scale(1)';
+                }, 50);
+              } else {
+                card.style.opacity = '0';
+                card.style.transform = 'scale(0.8)';
+                setTimeout(() => {
+                  card.style.display = 'none';
+                }, 300);
+              }
+            });
+          });
+        });
+
+        // Checkbox color filter
+        colorOptions.forEach((checkbox) => {
+          checkbox.addEventListener('change', function () {
+            filterProducts();
+          });
+        });
+
+        // Size filter functionality
+        const sizeOptions = document.querySelectorAll(
+          '.size-filter-option input'
+        );
+        sizeOptions.forEach((checkbox) => {
+          checkbox.addEventListener('change', function () {
+            filterProducts();
+          });
+        });
+
+        // Price filter functionality
+        const minPriceInput = document.getElementById('minPrice');
+        const maxPriceInput = document.getElementById('maxPrice');
+        const priceSlider = document.getElementById('priceSlider');
+
+        minPriceInput.addEventListener('input', function () {
+          filterProducts();
+        });
+
+        maxPriceInput.addEventListener('input', function () {
+          filterProducts();
+        });
+
+        priceSlider.addEventListener('input', function () {
+          maxPriceInput.value = this.value;
+          filterProducts();
+        });
+
+        // Style filter functionality
+        const styleOptions = document.querySelectorAll('.style-option input');
+        styleOptions.forEach((checkbox) => {
+          checkbox.addEventListener('change', function () {
+            filterProducts();
+          });
+        });
+
+        // Material filter functionality
+        const materialOptions = document.querySelectorAll(
+          '.material-option input'
+        );
+        materialOptions.forEach((checkbox) => {
+          checkbox.addEventListener('change', function () {
+            filterProducts();
+          });
+        });
+
+        // Apply filters button
+        const applyFiltersBtn = document.querySelector('.apply-filters');
+        applyFiltersBtn.addEventListener('click', function () {
+          filterProducts();
+          showNotification('Filters applied!');
+        });
+
+        // Clear filters button
+        const clearFiltersBtn = document.querySelector('.clear-filters');
+        clearFiltersBtn.addEventListener('click', function () {
+          // Clear all checkboxes
+          document
+            .querySelectorAll('input[type="checkbox"]')
+            .forEach((checkbox) => {
+              checkbox.checked = false;
+            });
+
+          // Reset price inputs
+          minPriceInput.value = 0;
+          maxPriceInput.value = 500000;
+          priceSlider.value = 500000;
+
+          // Reset to all categories
+          topCategories.forEach((cat) => cat.classList.remove('active'));
+          document
+            .querySelector('.top-category[data-color="all"]')
+            .classList.add('active');
+
+          // Show all products
+          productCards.forEach((card) => {
+            card.style.display = 'block';
+            card.style.opacity = '1';
+            card.style.transform = 'scale(1)';
+          });
+
+          showNotification('All filters cleared!');
+        });
+
+        // Sort functionality
+        const sortSelect = document.querySelector('.sort-select');
+        sortSelect.addEventListener('change', function () {
+          const container = document.querySelector('.top-grid');
+          const visibleCards = Array.from(productCards).filter(
+            (card) => card.style.display !== 'none'
+          );
+
+          visibleCards.sort((a, b) => {
+            const priceA = parseInt(a.getAttribute('data-price'));
+            const priceB = parseInt(b.getAttribute('data-price'));
+
+            switch (this.value) {
+              case 'price-low':
+                return priceA - priceB;
+              case 'price-high':
+                return priceB - priceA;
+              case 'newest':
+                // For demo, random sort for newest
+                return Math.random() - 0.5;
+              case 'popular':
+                const ratingA = parseFloat(
+                  a.querySelector('.fa-star')?.parentElement?.textContent || '0'
+                );
+                const ratingB = parseFloat(
+                  b.querySelector('.fa-star')?.parentElement?.textContent || '0'
+                );
+                return ratingB - ratingA;
+              default:
+                return 0;
+            }
+          });
+
+          // Reorder cards
+          visibleCards.forEach((card) => {
+            container.appendChild(card);
+          });
+        });
+
+        // Search functionality
+        const searchBar = document.querySelector('.search-bar');
+        if (searchBar) {
+          searchBar.addEventListener('input', function () {
+            const searchTerm = this.value.toLowerCase();
+
+            productCards.forEach((card) => {
+              const productName = card
+                .querySelector('.product-name')
+                .textContent.toLowerCase();
+
+              if (productName.includes(searchTerm) || searchTerm === '') {
+                card.style.display = 'block';
+              } else {
+                card.style.display = 'none';
+              }
+            });
+          });
+        }
+
+        // Pagination functionality
+        const pageButtons = document.querySelectorAll('.page-btn');
+        pageButtons.forEach((button) => {
+          button.addEventListener('click', function () {
+            // Remove active class from all buttons
+            pageButtons.forEach((btn) => btn.classList.remove('active'));
+            // Add active class to clicked button
+            this.classList.add('active');
+
+            if (this.textContent !== 'Next' && this.textContent !== '...') {
+              showNotification(`Loading page ${this.textContent}...`);
+            }
+          });
+        });
+
+        // Main filter function
+        function filterProducts() {
+          // Get selected colors
+          const selectedColors = Array.from(colorOptions)
+            .filter((checkbox) => checkbox.checked)
+            .map((checkbox) => checkbox.value);
+
+          // Get selected sizes
+          const selectedSizes = Array.from(sizeOptions)
+            .filter((checkbox) => checkbox.checked)
+            .map((checkbox) => checkbox.value);
+
+          // Get price range
+          const minPrice = parseInt(minPriceInput.value) || 0;
+          const maxPrice = parseInt(maxPriceInput.value) || 500000;
+
+          // Get selected styles
+          const selectedStyles = Array.from(styleOptions)
+            .filter((checkbox) => checkbox.checked)
+            .map((checkbox) => checkbox.value);
+
+          // Get selected materials
+          const selectedMaterials = Array.from(materialOptions)
+            .filter((checkbox) => checkbox.checked)
+            .map((checkbox) => checkbox.value);
+
+          // Filter products
+          productCards.forEach((card) => {
+            const cardColor = card.getAttribute('data-color');
+            const cardPrice = parseInt(card.getAttribute('data-price'));
+            const cardStyle = card.getAttribute('data-style');
+            const cardMaterial = card.getAttribute('data-material');
+
+            // Check if product passes all filters
+            const passesColor =
+              selectedColors.length === 0 || selectedColors.includes(cardColor);
+            const passesPrice = cardPrice >= minPrice && cardPrice <= maxPrice;
+            const passesStyle =
+              selectedStyles.length === 0 || selectedStyles.includes(cardStyle);
+            const passesMaterial =
+              selectedMaterials.length === 0 ||
+              selectedMaterials.includes(cardMaterial);
+
+            // Combine all filter conditions
+            if (passesColor && passesPrice && passesStyle && passesMaterial) {
+              card.style.display = 'block';
+              setTimeout(() => {
+                card.style.opacity = '1';
+                card.style.transform = 'scale(1)';
+              }, 50);
+            } else {
+              card.style.opacity = '0';
+              card.style.transform = 'scale(0.8)';
+              setTimeout(() => {
+                card.style.display = 'none';
+              }, 300);
+            }
+          });
+        }
+
+        // Wishlist functionality
+const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+
+// Update wishlist count in navbar
+function updateWishlistCount() {
+    const wishlistCount = wishlist.length;
+    document.getElementById('wishlistCountNav').textContent = wishlistCount;
+}
+
+// Initialize wishlist count
+updateWishlistCount
+
+        // Show cart preview modal
+        function showCartPreview(item) {
+          const modal = document.getElementById('cartPreviewModal');
+          const previewImage = document.getElementById('previewImage');
+          const previewName = document.getElementById('previewName');
+          const previewPrice = document.getElementById('previewPrice');
+          const previewSize = document.getElementById('previewSize');
+          
+          previewImage.src = item.image;
+          previewName.textContent = item.name;
+          previewPrice.textContent = `Rp ${item.price.toLocaleString()}/4 Days`;
+          previewSize.textContent = `Size: ${item.size}`;
+          
+          modal.style.display = 'flex';
+          document.body.style.overflow = 'hidden';
+        }
+
+        // Close cart preview modal
+        document.getElementById('closePreviewModal').addEventListener('click', function() {
+          document.getElementById('cartPreviewModal').style.display = 'none';
+          document.body.style.overflow = 'auto';
+        });
+
+        // Continue shopping button
+        document.getElementById('continueShoppingBtn').addEventListener('click', function() {
+          document.getElementById('cartPreviewModal').style.display = 'none';
+          document.body.style.overflow = 'auto';
+        });
+
+        // Close modal when clicking outside
+        document.getElementById('cartPreviewModal').addEventListener('click', function(e) {
+          if (e.target === this) {
+            this.style.display = 'none';
+            document.body.style.overflow = 'auto';
+          }
+        });
+
+        // Helper function for notifications
+        function showNotification(message) {
+          // Create notification element
+          const notification = document.createElement('div');
+          notification.className = 'notification';
+          notification.innerHTML = `
+            <i class="fas fa-check-circle"></i>
+            <span>${message}</span>
+          `;
+
+          // Add to body
+          document.body.appendChild(notification);
+
+          // Show notification
+          setTimeout(() => {
+            notification.classList.add('show');
+          }, 10);
+
+          // Remove notification after 3 seconds
+          setTimeout(() => {
+            notification.classList.remove('show');
+            setTimeout(() => {
+              notification.remove();
+            }, 300);
+          }, 3000);
+        }
+
+        // Mobile filter toggle (for responsive design)
+        const mobileFilterToggle = document.createElement('button');
+        mobileFilterToggle.className = 'mobile-filter-toggle';
+        mobileFilterToggle.innerHTML = '<i class="fas fa-filter"></i> Filters';
+        document.querySelector('.top-header').prepend(mobileFilterToggle);
+
+        mobileFilterToggle.addEventListener('click', function () {
+          document.querySelector('.filter-sidebar').classList.toggle('active');
+        });
+
+        // Close mobile filter when clicking outside
+        document.addEventListener('click', function (event) {
+          const sidebar = document.querySelector('.filter-sidebar');
+          if (
+            !sidebar.contains(event.target) &&
+            !mobileFilterToggle.contains(event.target)
+          ) {
+            sidebar.classList.remove('active');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

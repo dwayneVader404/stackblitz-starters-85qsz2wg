@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ - Sewa by Nessvia</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="faq.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Playfair+Display+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      GET 5% OFF ON YOUR FIRST RENT. USE: "SEWABYN3SVIA" AT CHECKOUT
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <a href="index.html" class="logo">Sewa by Nessvia</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="new-arrivals.html">New Arrivals</a></li>
+        <li><a href="highlights.html">Highlights</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn"
+            >Categories <i class="fas fa-chevron-down"></i
+          ></a>
+          <div class="dropdown-content">
+            <a href="all-collections.html">All Collection</a>
+            <a href="one-set.html">One Set</a>
+            <a href="dress.html">Dress</a>
+            <a href="top.html">Top</a>
+            <a href="jumpsuit.html">Jump Suit</a>
+          </div>
+        </li>
+        <li><a href="faq.html" class="active">FAQ</a></li>
+      </ul>
+      <div class="nav-right">
+        <input type="text" class="search-bar" placeholder="Search dress..." />
+        <div class="nav-icons">
+          <a href="cart.html" class="nav-icon-link">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <a href="wishlist.html" class="nav-icon-link">
+            <i class="fas fa-heart"></i>
+          </a>
+          <a href="login.html" class="nav-icon-link">
+            <i class="fas fa-user"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- FAQ Container -->
+    <div class="faq-container">
+      <div class="faq-header">
+        <h1>Frequently Asked Questions</h1>
+        <p class="faq-subtitle">
+          Find quick answers to common questions about our dress rental service
+        </p>
+        <div class="faq-search">
+          <i class="fas fa-search"></i>
+          <input
+            type="text"
+            id="faqSearch"
+            placeholder="Search for questions..."
+          />
+        </div>
+      </div>
+
+      <div class="faq-content">
+        <div class="faq-categories">
+          <button class="category-btn active" data-category="all">
+            All Questions
+          </button>
+          <button class="category-btn" data-category="booking">Booking</button>
+          <button class="category-btn" data-category="delivery">
+            Delivery
+          </button>
+          <button class="category-btn" data-category="sizing">Sizing</button>
+          <button class="category-btn" data-category="payment">Payment</button>
+          <button class="category-btn" data-category="care">Care</button>
+        </div>
+
+        <div class="faq-accordion">
+          <!-- Booking Category -->
+          <div class="faq-item" data-category="booking">
+            <div class="faq-question">
+              <h3>Apakah bisa coba dressnya?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Base kami adalah online shop, karena keterbatasan masih blm
+                punya fitting room dan MinNess kerja kantoran jg jadi hari kerja
+                biasanya pulang malam, atur waktunya yg agak susah. Namun case
+                by case masih bisa aja yah sist, yg penting janjian dulu :)
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="booking">
+            <div class="faq-question">
+              <h3>Apakah bisa sewa dress untuk jadwal besok hari? (Dadakan)</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Sebelum dress dikirim kepada penyewa, kami akan laundry dress
+                tsb terlebih dahulu. Maksimal H-2 (2 hari sbm pengambilan dress)
+                utk wil Banjarmasin & H-7 di luar Banjarmasin agar kami sempat
+                untuk menyiapkan dressnya.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="booking">
+            <div class="faq-question">
+              <h3>Apakah tersedia dress untuk anak?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Bisa di cek pada catalog ya sist, karena saat ini hanya ada
+                beberapa koleksi dress anak (masih sedikit). Kami lebih banyak
+                menyediakan dress untuk wanita dewasa.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="booking">
+            <div class="faq-question">
+              <h3>Apakah tersedia dress yang hijab friendly?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Rata-rata dress kami masih bisa dipadupadankan bagi customer yg
+                berhijab ya. Kami juga menyediakan inner long dress untuk cust
+                berhijab. Biaya sewa inner hijab di luar biaya sewa dress ya,
+                only Rp 50.000,- (selama persediaan masih ada)
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="booking">
+            <div class="faq-question">
+              <h3>Apakah bisa sewa hanya 1 hari?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Masa sewa kami adalah 4 hari dg asumsi pengiriman customer di
+                luar Banjarmasin. Sehingga apabila hanya ingin sewa &lt;4 hari
+                tidak masalah, namun harga sewa TETAP dikenakan dg harga sewa
+                selama 4 hari. Tidak ada proporsional harga sewa ya, dear
+              </p>
+            </div>
+          </div>
+
+          <!-- Delivery Category -->
+          <div class="faq-item" data-category="delivery">
+            <div class="faq-question">
+              <h3>Apakah bisa memesankan kurir untuk pengiriman dalam kota?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Mohon maaf Dear, pemesanan kurir untuk pengiriman Banjarmasin-Banjarbaru-Martapura-Handil Bakti dilakukan oleh penyewa sendiri ya. Kecuali ke daerah lain di luar itu, dilakukan pengiriman oleh kami menggunakan jasa ekspedisi 1 hari sampai</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="delivery">
+            <div class="faq-question">
+              <h3>Apakah dress yang dikirimkan selalu dalam keadaan baik?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Kami akan selalu berusaha menyiapkan dress tanpa adanya kerusakan. Kalaupun ada sedikit noda yg blm hilang sempurna ataupun sobek/kerusakan yg blm diperbaiki misalnya, akan selalu kami infokan sebelumnya pada penyewa.</p>
+            </div>
+          </div>
+
+          <!-- Sizing Category -->
+          <div class="faq-item" data-category="sizing">
+            <div class="faq-question">
+              <h3>What if the dress doesn't fit?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We provide detailed size charts for each dress. Please measure
+                yourself carefully before booking. We offer a 2-hour exchange
+                window after pickup if you need a different size (subject to
+                availability). Minor alterations like hemming are allowed but
+                must be done professionally.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="sizing">
+            <div class="faq-question">
+              <h3>How do I choose the right size?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                1. Take your measurements (bust, waist, hips)<br />
+                2. Compare with our size chart for each dress<br />
+                3. When in doubt, size up - it's easier to take in than let
+                out<br />
+                4. Contact us for personal sizing advice via WhatsApp
+              </p>
+            </div>
+          </div>
+
+          <!-- Payment Category -->
+         <div class="faq-item" data-category="payment">
+            <div class="faq-question">
+              <h3>Apakah bisa bayar melalui cash?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Pembayaran wajib melalui bank transfer saja dan pengembalian biaya deposit juga tidak bisa cash ya, jadi melalui bank transfer ataupun melalui pembayaran e-wallet masih diperbolehkan.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="payment">
+            <div class="faq-question">
+              <h3>Apakah bisa DP dulu?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Pembayaran wajib melalui bank transfer saja dan pengembalian biaya deposit juga tidak bisa cash ya, jadi melalui bank transfer ataupun melalui pembayaran e-wallet masih diperbolehkan.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="payment">
+            <div class="faq-question">
+              <h3>Berapa harga dress paling murah?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Harga dress kami mulai dari 85.000, silakan dicek di catalog kami untuk koleksi lebih lengkap dan semua harga, detail, warna, dll sudah dicantumkan di dalam catalog.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="payment">
+            <div class="faq-question">
+              <h3>Apakah bisa nego biaya?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Mohon maaf, biaya sewa, biaya deposit dan biaya ekstra sudah fix yah dear. Jadi tidak bisa dinego/dipotong lagi.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="payment">
+            <div class="faq-question">
+              <h3>Berapa lama uang deposit atau cashback (jika ada) akan dikembalikan?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Maksimal pengembalian (refund) biaya deposit atau pemberian cashback (jika ada) adalah H+3 setelah dilakukan pengecekan pada dress dan TIDAK TERDAPAT KERUSAKAN pada dress tersebut. Apabila terdapat kerusakan, deposit HANGUS dan apabila kerusakan parah, WAJIB BAYAR HARGA ASLI DRESS!</p>
+            </div>
+          </div>
+
+          <!-- Care Category -->
+          <div class="faq-item" data-category="care">
+            <div class="faq-question">
+              <h3>Apakah menyediakan nota?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>Apabila memang diperlukan oleh pihak penyewa, kami bisa menyediakan nota dengan rincian biaya sewa ataupun charge yang terjadi selama masa sewa. Nota akan diberikan maks H+3 setelah dress dikembalikan.</h3>
+            </div>
+          </div>
+
+
+          <!-- More FAQ Items -->
+          <div class="faq-item" data-category="booking">
+            <div class="faq-question">
+              <h3>Can I try dresses before booking?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes! We offer appointments at our studio in South Jakarta for
+                fittings. Please book at least 24 hours in advance. Each fitting
+                session is 30 minutes and you can try up to 3 dresses. Virtual
+                consultations are also available via video call.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="delivery">
+            <div class="faq-question">
+              <h3>Do you ship outside Jakarta?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes, we ship nationwide across Indonesia. Shipping costs vary by
+                location and are calculated at checkout. Delivery time is
+                typically 2-3 business days for major cities. For international
+                shipping, please contact us directly for rates and customs
+                information.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="payment">
+            <div class="faq-question">
+              <h3>Are there any hidden fees?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                No hidden fees! The price you see includes:<br />
+                • Dress rental for 4 days<br />
+                • Professional cleaning<br />
+                • Minor repairs if needed<br />
+                • Garment bag for storage<br />
+                Additional costs: delivery fee, late return fees (IDR
+                50,000/day), and damage fees if applicable.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-contact">
+          <div class="contact-box">
+            <i class="fas fa-comments"></i>
+            <h3>Still Have Questions?</h3>
+            <p>
+              Can't find the answer you're looking for? Our team is here to
+              help!
+            </p>
+            <div class="contact-methods">
+              <a
+                href="https://wa.me/6287876928748"
+                class="contact-btn whatsapp-btn"
+                target="_blank"
+              >
+                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+              </a>
+              <a href="mailto:sewanessvia.id" class="contact-btn email-btn">
+                <i class="fas fa-envelope"></i> Send Email
+              </a>
+              <a href="tel:+6287876928748" class="contact-btn phone-btn">
+                <i class="fas fa-phone"></i> Call Us
+              </a>
+            </div>
+            <p class="response-time">
+              <i class="fas fa-clock"></i> Average response time: 15 minutes
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">Sewa by Nessvia</div>
+          <p style="color: #ccc; font-size: 14px">Sewa.by.nessvia.id</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>CUSTOMER INFORMATION</h3>
+          <ul class="footer-links">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="#">Shipping Information</a></li>
+            <li><a href="#">Return Information</a></li>
+            <li><a href="#">How to Rent</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>INFORMATION</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="https://wa.me/6287876928748">Whatsapp: +6287876928748</a>
+            </li>
+            <li><a href="mailto:sewanessvia.id">Email: Sewanessvia.id</a></li>
+          </ul>
+
+          <h3 style="margin-top: 30px">FOLLOW US ON INSTAGRAM</h3>
+          <p style="color: #ccc; font-size: 14px">@sewabynessvia</p>
+          <div class="social-icons" style="margin-top: 15px">
+            <a
+              href="https://instagram.com/sewabynessvia"
+              target="_blank"
+              style="color: #ccc; margin-right: 15px"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://tiktok.com/@sewabynessvia"
+              target="_blank"
+              style="color: #ccc"
+            >
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>SIGN UP AND SAVE</h3>
+          <p style="color: #ccc; font-size: 14px; margin-bottom: 15px">
+            Subscribe to get special offers, newest collection, and rent due.
+          </p>
+          <div class="newsletter">
+            <input type="email" placeholder="Enter your email..." />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-links" style="display: flex; gap: 150px">
+          <a href="#"
+            ><i class="fas fa-shipping-fast"></i> Shipping to Nusantara</a
+          >
+          <a href="#"><i class="fas fa-diamond"></i> Classy Collections</a>
+          <a href="#"
+            ><i class="fas fa-credit-card"></i> Multiple Payment Methods</a
+          >
+          <a href="#"><i class="fas fa-headset"></i> Fast Response Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // FAQ Accordion functionality
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach((item) => {
+          const question = item.querySelector('.faq-question');
+          const answer = item.querySelector('.faq-answer');
+          const icon = question.querySelector('i');
+
+          question.addEventListener('click', () => {
+            // Close all other items
+            faqItems.forEach((otherItem) => {
+              if (
+                otherItem !== item &&
+                otherItem.classList.contains('active')
+              ) {
+                otherItem.classList.remove('active');
+                const otherAnswer = otherItem.querySelector('.faq-answer');
+                const otherIcon = otherItem.querySelector('.faq-question i');
+                otherAnswer.style.maxHeight = null;
+                otherIcon.className = 'fas fa-chevron-down';
+              }
+            });
+
+            // Toggle current item
+            item.classList.toggle('active');
+
+            if (item.classList.contains('active')) {
+              answer.style.maxHeight = answer.scrollHeight + 'px';
+              icon.className = 'fas fa-chevron-up';
+            } else {
+              answer.style.maxHeight = null;
+              icon.className = 'fas fa-chevron-down';
+            }
+          });
+        });
+
+        // Category filter functionality
+        const categoryBtns = document.querySelectorAll('.category-btn');
+        const faqSearch = document.getElementById('faqSearch');
+
+        categoryBtns.forEach((btn) => {
+          btn.addEventListener('click', () => {
+            // Remove active class from all buttons
+            categoryBtns.forEach((b) => b.classList.remove('active'));
+            // Add active class to clicked button
+            btn.classList.add('active');
+
+            const category = btn.getAttribute('data-category');
+            filterFAQs(category, faqSearch.value.toLowerCase());
+          });
+        });
+
+        // Search functionality
+        faqSearch.addEventListener('input', () => {
+          const activeCategory = document
+            .querySelector('.category-btn.active')
+            .getAttribute('data-category');
+          const searchTerm = faqSearch.value.toLowerCase();
+          filterFAQs(activeCategory, searchTerm);
+        });
+
+        function filterFAQs(category, searchTerm) {
+          faqItems.forEach((item) => {
+            const itemCategory = item.getAttribute('data-category');
+            const question = item
+              .querySelector('.faq-question h3')
+              .textContent.toLowerCase();
+            const answer = item
+              .querySelector('.faq-answer p')
+              .textContent.toLowerCase();
+
+            const matchesCategory =
+              category === 'all' || itemCategory === category;
+            const matchesSearch =
+              !searchTerm ||
+              question.includes(searchTerm) ||
+              answer.includes(searchTerm);
+
+            if (matchesCategory && matchesSearch) {
+              item.style.display = 'block';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        }
+
+        // Open first FAQ item by default
+        if (faqItems.length > 0) {
+          const firstFaq = faqItems[0];
+          firstFaq.classList.add('active');
+          const firstAnswer = firstFaq.querySelector('.faq-answer');
+          const firstIcon = firstFaq.querySelector('.faq-question i');
+          firstAnswer.style.maxHeight = firstAnswer.scrollHeight + 'px';
+          firstIcon.className = 'fas fa-chevron-up';
+        }
+
+        // Add smooth scroll for links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+              target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+              });
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

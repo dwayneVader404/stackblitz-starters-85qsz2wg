@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wishlist - Sewa by Nessvia</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="wishlist.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Playfair+Display+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      GET 5% OFF ON YOUR FIRST RENT. USE: "SEWABYN3SVIA" AT CHECKOUT
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <a href="index.html" class="logo">Sewa by Nessvia</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="new-arrivals.html">New Arrivals</a></li>
+        <li><a href="highlights.html">Highlights</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn"
+            >Categories <i class="fas fa-chevron-down"></i
+          ></a>
+          <div class="dropdown-content">
+            <a href="all-collection.html">All Collection</a>
+            <a href="oneset.html">One Set</a>
+            <a href="dress.html">Dress</a>
+            <a href="top.html">Top</a>
+            <a href="#jump-suit">Jump Suit</a>
+          </div>
+        </li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+      <div class="nav-right">
+        <input
+          type="text"
+          class="search-bar"
+          placeholder="Search wishlist..."
+        />
+        <div class="nav-icons">
+          <a href="cart.html" class="nav-icon-link">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <a href="wishlist.html" class="nav-icon-link">
+            <i class="fas fa-heart"></i>
+          </a>
+          <a href="login.html" class="nav-icon-link">
+            <i class="fas fa-user"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Wishlist Banner -->
+    <div class="wishlist-banner">
+      <div class="wishlist-banner-overlay">
+        <div class="wishlist-banner-content">
+          <h1>My Wishlist</h1>
+          <p>Save your favorite items for later</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wishlist Section -->
+    <section class="wishlist-section">
+      <div class="wishlist-container">
+        <!-- Wishlist Header -->
+        <div class="wishlist-header">
+          <div class="wishlist-title-section">
+            <h2>My Saved Items (<span id="wishlistCount">0</span>)</h2>
+            <p>Items you've liked will appear here</p>
+          </div>
+          <div class="wishlist-actions">
+            <button class="clear-wishlist-btn" id="clearWishlistBtn">
+              <i class="fas fa-trash"></i> Clear All
+            </button>
+          </div>
+        </div>
+
+        <!-- Empty Wishlist Message -->
+        <div class="empty-wishlist-message" id="emptyWishlistMessage">
+          <i class="fas fa-heart"></i>
+          <h3>Your wishlist is empty</h3>
+          <p>Start adding items you love by clicking the heart icon!</p>
+          <a href="dress.html" class="browse-btn">Browse Collection</a>
+        </div>
+
+        <!-- Wishlist Grid -->
+        <div class="wishlist-grid" id="wishlistGrid">
+          <!-- Wishlist items will be dynamically added here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Recently Viewed -->
+    <section class="recently-viewed">
+      <div class="recently-container">
+        <h2>You Might Also Like</h2>
+        <div class="recently-grid">
+          <!-- Product 1 -->
+          <div class="recently-card">
+            <img
+              src="https://i.ibb.co.com/HfntFTFB/Snap-Insta-to-468351173-17972543819798119-6275692406861753976-n.jpg"
+              alt="Charlotte Dress"
+            />
+            <div class="recently-info">
+              <h4>Charlotte Dress</h4>
+              <p>Rp 450,000/4 Days</p>
+              <div class="recently-actions">
+                <button
+                  class="add-to-cart-recently"
+                  data-id="dress1"
+                  data-name="Charlotte Dress"
+                  data-price="450000"
+                  data-image="https://i.ibb.co.com/HfntFTFB/Snap-Insta-to-468351173-17972543819798119-6275692406861753976-n.jpg"
+                >
+                  <i class="fas fa-cart-plus"></i>
+                </button>
+                <button
+                  class="heart-icon-recently"
+                  data-id="dress1"
+                  data-name="Charlotte Dress"
+                  data-price="450000"
+                  data-image="https://i.ibb.co.com/HfntFTFB/Snap-Insta-to-468351173-17972543819798119-6275692406861753976-n.jpg"
+                >
+                  <i class="far fa-heart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="recently-card">
+            <img
+              src="https://i.ibb.co.com/0jqYJ0X8/Whats-App-Image-2024-01-15-at-10-30-45.jpg"
+              alt="Blush Pink Gown"
+            />
+            <div class="recently-info">
+              <h4>Blush Pink Gown</h4>
+              <p>Rp 550,000/4 Days</p>
+              <div class="recently-actions">
+                <button
+                  class="add-to-cart-recently"
+                  data-id="dress2"
+                  data-name="Blush Pink Evening Gown"
+                  data-price="550000"
+                  data-image="https://i.ibb.co.com/0jqYJ0X8/Whats-App-Image-2024-01-15-at-10-30-45.jpg"
+                >
+                  <i class="fas fa-cart-plus"></i>
+                </button>
+                <button
+                  class="heart-icon-recently"
+                  data-id="dress2"
+                  data-name="Blush Pink Evening Gown"
+                  data-price="550000"
+                  data-image="https://i.ibb.co.com/0jqYJ0X8/Whats-App-Image-2024-01-15-at-10-30-45.jpg"
+                >
+                  <i class="far fa-heart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="recently-card">
+            <img
+              src="https://i.ibb.co.com/9qjGn24H/Whats-App-Image-2024-01-15-at-10-30-47.jpg"
+              alt="Royal Blue Dress"
+            />
+            <div class="recently-info">
+              <h4>Royal Blue Dress</h4>
+              <p>Rp 520,000/4 Days</p>
+              <div class="recently-actions">
+                <button
+                  class="add-to-cart-recently"
+                  data-id="dress3"
+                  data-name="Royal Blue Evening Dress"
+                  data-price="520000"
+                  data-image="https://i.ibb.co.com/9qjGn24H/Whats-App-Image-2024-01-15-at-10-30-47.jpg"
+                >
+                  <i class="fas fa-cart-plus"></i>
+                </button>
+                <button
+                  class="heart-icon-recently"
+                  data-id="dress3"
+                  data-name="Royal Blue Evening Dress"
+                  data-price="520000"
+                  data-image="https://i.ibb.co.com/9qjGn24H/Whats-App-Image-2024-01-15-at-10-30-47.jpg"
+                >
+                  <i class="far fa-heart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">Sewa by Nessvia</div>
+          <p style="color: #ccc; font-size: 14px">Sewa.by.nessvia.id</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>CUSTOMER INFORMATION</h3>
+          <ul class="footer-links">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="#">Shipping Information</a></li>
+            <li><a href="#">Return Information</a></li>
+            <li><a href="#">How to Rent</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>INFORMATION</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="https://wa.me/6287876928748">Whatsapp: +6287876928748</a>
+            </li>
+            <li><a href="mailto:sewanessvia.id">Email: Sewanessvia.id</a></li>
+          </ul>
+
+          <h3 style="margin-top: 30px">FOLLOW US ON INSTAGRAM</h3>
+          <p style="color: #ccc; font-size: 14px">@sewabynessvia</p>
+          <div class="social-icons" style="margin-top: 15px">
+            <a
+              href="https://instagram.com/sewabynessvia"
+              target="_blank"
+              style="color: #ccc; margin-right: 15px"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://tiktok.com/@sewabynessvia"
+              target="_blank"
+              style="color: #ccc"
+            >
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>SIGN UP AND SAVE</h3>
+          <p style="color: #ccc; font-size: 14px; margin-bottom: 15px">
+            Subscribe to get special offers, newest collection, and rent due.
+          </p>
+          <div class="newsletter">
+            <input type="email" placeholder="Enter your email..." />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-links" style="display: flex; gap: 150px">
+          <a href="#"
+            ><i class="fas fa-shipping-fast"></i> Shipping to Nusantara</a
+          >
+          <a href="#"><i class="fas fa-diamond"></i> Classy Collections</a>
+          <a href="#"
+            ><i class="fas fa-credit-card"></i> Multiple Payment Methods</a
+          >
+          <a href="#"><i class="fas fa-headset"></i> Fast Response Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Wishlist Notification -->
+    <div class="wishlist-notification" id="wishlistNotification">
+      <i class="fas fa-check-circle"></i>
+      <span id="notificationMessage"></span>
+    </div>
+
+    <script>
+      // Wishlist Data Structure
+      let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+      // DOM Elements
+      const wishlistGrid = document.getElementById('wishlistGrid');
+      const emptyWishlistMessage = document.getElementById(
+        'emptyWishlistMessage'
+      );
+      const wishlistCountNav = document.getElementById('wishlistCountNav');
+      const wishlistCount = document.getElementById('wishlistCount');
+      const cartCountNav = document.getElementById('cartCountNav');
+      const clearWishlistBtn = document.getElementById('clearWishlistBtn');
+      const wishlistNotification = document.getElementById(
+        'wishlistNotification'
+      );
+      const notificationMessage = document.getElementById(
+        'notificationMessage'
+      );
+
+      // Format currency
+      function formatCurrency(amount) {
+        return 'Rp ' + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+      }
+
+      // Update wishlist display
+      function updateWishlistDisplay() {
+        // Save wishlist to localStorage
+        localStorage.setItem('wishlist', JSON.stringify(wishlist));
+
+        // Update wishlist count in navbar
+        wishlistCountNav.textContent = wishlist.length;
+        wishlistCount.textContent = wishlist.length;
+
+        // Update cart count in navbar
+        const cartCount = cart.length;
+        cartCountNav.textContent = cartCount;
+
+        // Clear existing wishlist items
+        wishlistGrid.innerHTML = '';
+
+        if (wishlist.length === 0) {
+          // Show empty wishlist message
+          emptyWishlistMessage.style.display = 'block';
+        } else {
+          // Hide empty wishlist message
+          emptyWishlistMessage.style.display = 'none';
+
+          // Add each wishlist item
+          wishlist.forEach((item, index) => {
+            const wishlistItem = document.createElement('div');
+            wishlistItem.className = 'wishlist-item';
+            wishlistItem.innerHTML = `
+                        <div class="wishlist-item-image">
+                            <img src="${item.image}" alt="${item.name}">
+                            <button class="remove-from-wishlist-btn" data-index="${index}">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="wishlist-item-details">
+                            <h4>${item.name}</h4>
+                            <p class="wishlist-item-price">${formatCurrency(
+                              item.price
+                            )}/4 Days</p>
+                            ${
+                              item.color
+                                ? `<p class="wishlist-item-color">Color: ${item.color}</p>`
+                                : ''
+                            }
+                            ${
+                              item.size
+                                ? `<p class="wishlist-item-size">Size: ${item.size}</p>`
+                                : ''
+                            }
+                            
+                            <div class="wishlist-item-actions">
+                                <button class="move-to-cart-btn" data-index="${index}">
+                                    <i class="fas fa-cart-plus"></i> Add to Cart
+                                </button>
+                                <button class="rent-now-wishlist" data-index="${index}">
+                                    Rent Now
+                                </button>
+                            </div>
+                            
+                            <div class="availability-status">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Available for Rent</span>
+                            </div>
+                        </div>
+                    `;
+            wishlistGrid.appendChild(wishlistItem);
+          });
+
+          // Add event listeners to new buttons
+          document
+            .querySelectorAll('.remove-from-wishlist-btn')
+            .forEach((btn) => {
+              btn.addEventListener('click', function () {
+                const index = parseInt(this.getAttribute('data-index'));
+                removeFromWishlist(index);
+              });
+            });
+
+          document.querySelectorAll('.move-to-cart-btn').forEach((btn) => {
+            btn.addEventListener('click', function () {
+              const index = parseInt(this.getAttribute('data-index'));
+              moveToCart(index);
+            });
+          });
+
+          document.querySelectorAll('.rent-now-wishlist').forEach((btn) => {
+            btn.addEventListener('click', function () {
+              const index = parseInt(this.getAttribute('data-index'));
+              rentFromWishlist(index);
+            });
+          });
+        }
+      }
+
+      // Add item to wishlist
+      function addToWishlist(item) {
+        // Check if item already exists in wishlist
+        const existingItemIndex = wishlist.findIndex(
+          (wishlistItem) => wishlistItem.id === item.id
+        );
+
+        if (existingItemIndex === -1) {
+          // Add new item to wishlist
+          wishlist.push(item);
+          updateWishlistDisplay();
+          showNotification(`${item.name} added to wishlist!`);
+          return true;
+        } else {
+          // Item already in wishlist, remove it
+          wishlist.splice(existingItemIndex, 1);
+          updateWishlistDisplay();
+          showNotification(`${item.name} removed from wishlist!`);
+          return false;
+        }
+      }
+
+      // Remove item from wishlist
+      function removeFromWishlist(index) {
+        const itemName = wishlist[index].name;
+        wishlist.splice(index, 1);
+        updateWishlistDisplay();
+        showNotification(`${itemName} removed from wishlist!`);
+      }
+
+      // Move item from wishlist to cart
+      function moveToCart(index) {
+        const item = wishlist[index];
+
+        // Check if item already exists in cart
+        const existingItemIndex = cart.findIndex(
+          (cartItem) => cartItem.id === item.id
+        );
+
+        if (existingItemIndex === -1) {
+          // Add item to cart
+          cart.push(item);
+          localStorage.setItem('cart', JSON.stringify(cart));
+          updateWishlistDisplay();
+          showNotification(`${item.name} moved to cart!`);
+
+          // Optionally remove from wishlist
+          wishlist.splice(index, 1);
+          updateWishlistDisplay();
+        } else {
+          showNotification(`${item.name} is already in your cart!`);
+        }
+      }
+
+      // Rent directly from wishlist
+      function rentFromWishlist(index) {
+        const item = wishlist[index];
+
+        // Check if item already exists in cart
+        const existingItemIndex = cart.findIndex(
+          (cartItem) => cartItem.id === item.id
+        );
+
+        if (existingItemIndex === -1) {
+          // Add item to cart
+          cart.push(item);
+          localStorage.setItem('cart', JSON.stringify(cart));
+        }
+
+        // Redirect to cart page
+        window.location.href = 'cart.html';
+      }
+
+      // Clear wishlist
+      function clearWishlist() {
+        if (wishlist.length > 0) {
+          if (confirm('Are you sure you want to clear your wishlist?')) {
+            wishlist = [];
+            updateWishlistDisplay();
+            showNotification('Wishlist cleared successfully!');
+          }
+        }
+      }
+
+      // Show notification
+      function showNotification(message) {
+        notificationMessage.textContent = message;
+        wishlistNotification.classList.add('show');
+
+        setTimeout(() => {
+          wishlistNotification.classList.remove('show');
+        }, 3000);
+      }
+
+      // Initialize wishlist
+      updateWishlistDisplay();
+
+      // Event Listeners
+      clearWishlistBtn.addEventListener('click', clearWishlist);
+
+      // Heart icon functionality for recently viewed
+      document.querySelectorAll('.heart-icon-recently').forEach((icon) => {
+        icon.addEventListener('click', function () {
+          const item = {
+            id: this.getAttribute('data-id'),
+            name: this.getAttribute('data-name'),
+            price: parseInt(this.getAttribute('data-price')),
+            image: this.getAttribute('data-image'),
+          };
+
+          const added = addToWishlist(item);
+
+          // Update heart icon appearance
+          if (added) {
+            this.innerHTML = '<i class="fas fa-heart"></i>';
+            this.style.color = '#ff1493';
+          } else {
+            this.innerHTML = '<i class="far fa-heart"></i>';
+            this.style.color = '';
+          }
+        });
+      });
+
+      // Add to cart functionality for recently viewed
+      document.querySelectorAll('.add-to-cart-recently').forEach((btn) => {
+        btn.addEventListener('click', function () {
+          const item = {
+            id: this.getAttribute('data-id'),
+            name: this.getAttribute('data-name'),
+            price: parseInt(this.getAttribute('data-price')),
+            image: this.getAttribute('data-image'),
+          };
+
+          // Check if item already exists in cart
+          const existingItemIndex = cart.findIndex(
+            (cartItem) => cartItem.id === item.id
+          );
+
+          if (existingItemIndex === -1) {
+            cart.push(item);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateWishlistDisplay();
+            showNotification(`${item.name} added to cart!`);
+
+            // Visual feedback
+            this.style.backgroundColor = '#4CAF50';
+            this.style.color = 'white';
+            this.innerHTML = '<i class="fas fa-check"></i>';
+
+            setTimeout(() => {
+              this.style.backgroundColor = '';
+              this.style.color = '';
+              this.innerHTML = '<i class="fas fa-cart-plus"></i>';
+            }, 2000);
+          } else {
+            showNotification(`${item.name} is already in your cart!`);
+          }
+        });
+      });
+
+      // Search functionality
+      const searchBar = document.querySelector('.search-bar');
+      if (searchBar) {
+        searchBar.addEventListener('input', function () {
+          const searchTerm = this.value.toLowerCase();
+          const wishlistItems = document.querySelectorAll('.wishlist-item');
+
+          wishlistItems.forEach((item) => {
+            const productName = item
+              .querySelector('h4')
+              .textContent.toLowerCase();
+
+            if (productName.includes(searchTerm) || searchTerm === '') {
+              item.style.display = 'block';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      }
+
+      // Check initial heart states for recently viewed items
+      document.querySelectorAll('.heart-icon-recently').forEach((icon) => {
+        const itemId = icon.getAttribute('data-id');
+        const isInWishlist = wishlist.some((item) => item.id === itemId);
+
+        if (isInWishlist) {
+          icon.innerHTML = '<i class="fas fa-heart"></i>';
+          icon.style.color = '#ff1493';
+        }
+      });
+    </script>
+  </body>
+</html>

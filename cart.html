@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart - Sewa by Nessvia</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Playfair+Display+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      GET 5% OFF ON YOUR FIRST RENT. USE: "SEWABYN3SVIA" AT CHECKOUT
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <a href="index.html" class="logo">Sewa by Nessvia</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="new-arrivals.html">New Arrivals</a></li>
+        <li><a href="highlights.html">Highlights</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn"
+            >Categories <i class="fas fa-chevron-down"></i
+          ></a>
+          <div class="dropdown-content">
+            <a href="all-collection.html">All Collection</a>
+            <a href="oneset.html">One Set</a>
+            <a href="dress.html">Dress</a>
+            <a href="top.html">Top</a>
+            <a href="jump-suit.html">Jump Suit</a>
+          </div>
+        </li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+      <div class="nav-right">
+        <input type="text" class="search-bar" placeholder="Search..." />
+        <div class="nav-icons">
+          <a href="cart.html" class="nav-icon-link active">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count" id="cartCount">0</span>
+          </a>
+          <a href="wishlist.html" class="nav-icon-link">
+            <i class="fas fa-heart"></i>
+          </a>
+          <a href="login.html" class="nav-icon-link">
+            <i class="fas fa-user"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Cart Banner -->
+    <div class="cart-banner">
+      <div class="cart-banner-overlay">
+        <div class="cart-banner-content">
+          <h1>Your Shopping Cart</h1>
+          <p>Review your selected items before checkout</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+      <div class="cart-container">
+        <!-- Cart Items -->
+        <div class="cart-items">
+          <div class="cart-header">
+            <h2>Cart Items (<span id="itemCount">0</span>)</h2>
+            <button class="clear-cart-btn" id="clearCartBtn">Clear All</button>
+          </div>
+
+          <div class="cart-list" id="cartList">
+            <!-- Cart items will be dynamically added here -->
+            <div class="empty-cart-message" id="emptyCartMessage">
+              <i class="fas fa-shopping-cart"></i>
+              <h3>Your cart is empty</h3>
+              <p>Add some beautiful dresses to your cart!</p>
+              <a href="dress.html" class="browse-btn">Browse Collection</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="order-summary">
+          <div class="summary-card">
+            <h3>Order Summary</h3>
+
+            <div class="summary-details">
+              <div class="summary-row">
+                <span>Subtotal</span>
+                <span class="summary-value" id="subtotal">Rp 0</span>
+              </div>
+              <div class="summary-row">
+                <span>Discount</span>
+                <span class="summary-value" id="discount">-Rp 0</span>
+              </div>
+              <div class="summary-row">
+                <span>Service Fee</span>
+                <span class="summary-value">Rp 25,000</span>
+              </div>
+              <div class="summary-row">
+                <span>Shipping</span>
+                <span class="summary-value free">FREE</span>
+              </div>
+              <div class="summary-divider"></div>
+              <div class="summary-row total">
+                <span>Total</span>
+                <span class="summary-value" id="total">Rp 0</span>
+              </div>
+            </div>
+
+            <!-- Discount Code -->
+            <div class="discount-section">
+              <input
+                type="text"
+                class="discount-input"
+                id="discountCode"
+                placeholder="Enter discount code"
+              />
+              <button class="apply-discount-btn" id="applyDiscountBtn">
+                Apply
+              </button>
+            </div>
+            <p class="discount-info" id="discountInfo">
+              Use code "SEWABYN3SVIA" for 5% off
+            </p>
+
+            <!-- Checkout Button -->
+            <button
+              class="checkout-btn"
+              id="checkoutBtn"
+              onclick="window.location.href='checkout.html'"
+              disabled
+            >
+              <i class="fas fa-lock"></i>
+              Proceed to Checkout
+            </button>
+
+            <!-- Continue Shopping -->
+            <a href="dress.html" class="continue-shopping">
+              <i class="fas fa-arrow-left"></i>
+              Continue Shopping
+            </a>
+
+            <!-- Secure Payment Info -->
+            <div class="secure-payment">
+              <i class="fas fa-shield-alt"></i>
+              <span>Secure & encrypted payment</span>
+            </div>
+          </div>
+
+          <!-- Cart Tips -->
+          <div class="cart-tips">
+            <h4><i class="fas fa-lightbulb"></i> Cart Tips</h4>
+            <ul>
+              <li>Rent duration is 4 days per item</li>
+              <li>Free shipping for orders over Rp 300,000</li>
+              <li>Add multiple sizes for backup options</li>
+              <li>You can edit your cart until checkout</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recently Viewed -->
+    <section class="recently-viewed">
+      <div class="recently-container">
+        <h2>You Might Also Like</h2>
+        <div class="recently-grid">
+          <!-- Product 1 -->
+          <div class="recently-card">
+            <img
+              src="https://i.ibb.co.com/HfntFTFB/Snap-Insta-to-468351173-17972543819798119-6275692406861753976-n.jpg"
+              alt="Charlotte Dress"
+            />
+            <div class="recently-info">
+              <h4>Charlotte Dress</h4>
+              <p>Rp 450,000/4 Days</p>
+              <button
+                class="add-to-cart-quick"
+                data-id="dress1"
+                data-name="Charlotte Dress"
+                data-price="450000"
+                data-image="https://i.ibb.co.com/HfntFTFB/Snap-Insta-to-468351173-17972543819798119-6275692406861753976-n.jpg"
+              >
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="recently-card">
+            <img
+              src="https://i.ibb.co.com/0jqYJ0X8/Whats-App-Image-2024-01-15-at-10-30-45.jpg"
+              alt="Blush Pink Gown"
+            />
+            <div class="recently-info">
+              <h4>Blush Pink Gown</h4>
+              <p>Rp 550,000/4 Days</p>
+              <button
+                class="add-to-cart-quick"
+                data-id="dress2"
+                data-name="Blush Pink Evening Gown"
+                data-price="550000"
+                data-image="https://i.ibb.co.com/0jqYJ0X8/Whats-App-Image-2024-01-15-at-10-30-45.jpg"
+              >
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="recently-card">
+            <img
+              src="https://i.ibb.co.com/9qjGn24H/Whats-App-Image-2024-01-15-at-10-30-47.jpg"
+              alt="Royal Blue Dress"
+            />
+            <div class="recently-info">
+              <h4>Royal Blue Dress</h4>
+              <p>Rp 520,000/4 Days</p>
+              <button
+                class="add-to-cart-quick"
+                data-id="dress3"
+                data-name="Royal Blue Evening Dress"
+                data-price="520000"
+                data-image="https://i.ibb.co.com/9qjGn24H/Whats-App-Image-2024-01-15-at-10-30-47.jpg"
+              >
+                <i class="fas fa-cart-plus"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">Sewa by Nessvia</div>
+          <p style="color: #ccc; font-size: 14px">Sewa.by.nessvia.id</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>CUSTOMER INFORMATION</h3>
+          <ul class="footer-links">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="#">Shipping Information</a></li>
+            <li><a href="#">Return Information</a></li>
+            <li><a href="#">How to Rent</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>INFORMATION</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="https://wa.me/6287876928748">Whatsapp: +6287876928748</a>
+            </li>
+            <li><a href="mailto:sewanessvia.id">Email: Sewanessvia.id</a></li>
+          </ul>
+
+          <h3 style="margin-top: 30px">FOLLOW US ON INSTAGRAM</h3>
+          <p style="color: #ccc; font-size: 14px">@sewabynessvia</p>
+          <div class="social-icons" style="margin-top: 15px">
+            <a
+              href="https://instagram.com/sewabynessvia"
+              target="_blank"
+              style="color: #ccc; margin-right: 15px"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://tiktok.com/@sewabynessvia"
+              target="_blank"
+              style="color: #ccc"
+            >
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>SIGN UP AND SAVE</h3>
+          <p style="color: #ccc; font-size: 14px; margin-bottom: 15px">
+            Subscribe to get special offers, newest collection, and rent due.
+          </p>
+          <div class="newsletter">
+            <input type="email" placeholder="Enter your email..." />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-links" style="display: flex; gap: 150px">
+          <a href="#"
+            ><i class="fas fa-shipping-fast"></i> Shipping to Nusantara</a
+          >
+          <a href="#"><i class="fas fa-diamond"></i> Classy Collections</a>
+          <a href="#"
+            ><i class="fas fa-credit-card"></i> Multiple Payment Methods</a
+          >
+          <a href="#"><i class="fas fa-headset"></i> Fast Response Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Cart Data Structure - TANPA QUANTITY
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+      // DOM Elements
+      const cartList = document.getElementById('cartList');
+      const emptyCartMessage = document.getElementById('emptyCartMessage');
+      const cartCount = document.getElementById('cartCount');
+      const itemCount = document.getElementById('itemCount');
+      const subtotalElement = document.getElementById('subtotal');
+      const discountElement = document.getElementById('discount');
+      const totalElement = document.getElementById('total');
+      const clearCartBtn = document.getElementById('clearCartBtn');
+      const checkoutBtn = document.getElementById('checkoutBtn');
+      const applyDiscountBtn = document.getElementById('applyDiscountBtn');
+      const discountCodeInput = document.getElementById('discountCode');
+      const discountInfo = document.getElementById('discountInfo');
+
+      // Format currency
+      function formatCurrency(amount) {
+        return 'Rp ' + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+      }
+
+      // Calculate cart totals - TANPA QUANTITY
+      function calculateTotals() {
+        let subtotal = 0;
+
+        // Jumlahkan harga semua item (satu item satu harga)
+        cart.forEach((item) => {
+          subtotal += item.price;
+        });
+
+        // Check for discount
+        let discount = 0;
+        const discountCode = localStorage.getItem('discountCode');
+        if (discountCode === 'SEWABYN3SVIA') {
+          discount = subtotal * 0.05; // 5% discount
+        }
+
+        const serviceFee = 25000;
+        const total = subtotal - discount + serviceFee;
+
+        return { subtotal, discount, total };
+      }
+
+      // Update cart display - TANPA QUANTITY
+      function updateCartDisplay() {
+        // Save cart to localStorage
+        localStorage.setItem('cart', JSON.stringify(cart));
+
+        // Update cart count in navbar (satu item = satu count)
+        const itemCountValue = cart.length;
+        cartCount.textContent = itemCountValue;
+        itemCount.textContent = itemCountValue;
+
+        // Calculate totals
+        const { subtotal, discount, total } = calculateTotals();
+
+        // Update total displays
+        subtotalElement.textContent = formatCurrency(subtotal);
+        discountElement.textContent =
+          discount > 0 ? '-' + formatCurrency(discount) : formatCurrency(0);
+        totalElement.textContent = formatCurrency(total);
+
+        // Enable/disable checkout button
+        checkoutBtn.disabled = cart.length === 0;
+        checkoutBtn.style.opacity = cart.length === 0 ? '0.6' : '1';
+
+        // Clear existing cart items
+        cartList.innerHTML = '';
+
+        if (cart.length === 0) {
+          // Show empty cart message
+          cartList.appendChild(emptyCartMessage);
+          emptyCartMessage.style.display = 'block';
+        } else {
+          // Hide empty cart message
+          emptyCartMessage.style.display = 'none';
+
+          // Add each cart item (TANPA QUANTITY CONTROLS)
+          cart.forEach((item, index) => {
+            const cartItem = document.createElement('div');
+            cartItem.className = 'cart-item';
+            cartItem.innerHTML = `
+                        <div class="cart-item-image">
+                            <img src="${item.image}" alt="${item.name}">
+                        </div>
+                        <div class="cart-item-details">
+                            <div class="cart-item-header">
+                                <h4>${item.name}</h4>
+                                <button class="remove-item-btn" data-index="${index}">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                            <p class="cart-item-price">${formatCurrency(
+                              item.price
+                            )}/4 Days</p>
+                            ${
+                              item.size
+                                ? `<p class="cart-item-size">Size: ${item.size}</p>`
+                                : ''
+                            }
+                            ${
+                              item.color
+                                ? `<p class="cart-item-color">Color: ${item.color}</p>`
+                                : ''
+                            }
+                            <div class="cart-item-actions">
+                                <span class="item-total">${formatCurrency(
+                                  item.price
+                                )}</span>
+                            </div>
+                        </div>
+                    `;
+            cartList.appendChild(cartItem);
+          });
+
+          // Add event listeners to remove buttons
+          document.querySelectorAll('.remove-item-btn').forEach((btn) => {
+            btn.addEventListener('click', function () {
+              const index = parseInt(this.getAttribute('data-index'));
+              removeFromCart(index);
+            });
+          });
+        }
+      }
+
+      // Add item to cart - TANPA QUANTITY, tidak boleh duplicate
+      function addToCart(item) {
+        // Check if exact same item already exists in cart
+        const existingItemIndex = cart.findIndex(
+          (cartItem) => cartItem.id === item.id && cartItem.size === item.size
+        );
+
+        if (existingItemIndex === -1) {
+          // Add new item (hanya satu)
+          cart.push({
+            ...item,
+            quantity: 1, // Tetap simpan quantity 1 untuk struktur data
+          });
+          updateCartDisplay();
+          showNotification(`${item.name} added to cart!`);
+          return true;
+        } else {
+          // Item sudah ada di cart
+          showNotification(`${item.name} is already in your cart!`);
+          return false;
+        }
+      }
+
+      // Remove item from cart
+      function removeFromCart(index) {
+        const itemName = cart[index].name;
+        cart.splice(index, 1);
+        updateCartDisplay();
+        showNotification(`${itemName} removed from cart`);
+      }
+
+      // Clear cart
+      function clearCart() {
+        if (cart.length > 0) {
+          if (confirm('Are you sure you want to clear your cart?')) {
+            cart = [];
+            updateCartDisplay();
+            showNotification('Cart cleared successfully');
+          }
+        }
+      }
+
+      // Apply discount code
+      function applyDiscount() {
+        const code = discountCodeInput.value.trim().toUpperCase();
+
+        if (code === 'SEWABYN3SVIA') {
+          localStorage.setItem('discountCode', code);
+          updateCartDisplay();
+          discountInfo.textContent = 'Discount applied! 5% off your order.';
+          discountInfo.style.color = '#4CAF50';
+          showNotification('Discount code applied successfully!');
+        } else if (code === '') {
+          discountInfo.textContent = 'Please enter a discount code';
+          discountInfo.style.color = '#ff6b6b';
+        } else {
+          discountInfo.textContent = 'Invalid discount code';
+          discountInfo.style.color = '#ff6b6b';
+          showNotification('Invalid discount code');
+        }
+      }
+
+      // Show notification
+      function showNotification(message) {
+        const notification = document.createElement('div');
+        notification.className = 'cart-notification';
+        notification.innerHTML = `
+                <i class="fas fa-check-circle"></i>
+                <span>${message}</span>
+            `;
+
+        document.body.appendChild(notification);
+
+        setTimeout(() => {
+          notification.classList.add('show');
+        }, 10);
+
+        setTimeout(() => {
+          notification.classList.remove('show');
+          setTimeout(() => {
+            notification.remove();
+          }, 300);
+        }, 3000);
+      }
+
+      // Initialize cart
+      updateCartDisplay();
+
+      // Event Listeners
+      clearCartBtn.addEventListener('click', clearCart);
+
+      applyDiscountBtn.addEventListener('click', applyDiscount);
+
+      discountCodeInput.addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') {
+          applyDiscount();
+        }
+      });
+
+      checkoutBtn.addEventListener('click', function () {
+        if (cart.length > 0) {
+          window.location.href = 'checkout.html';
+        }
+      });
+
+      // Quick add to cart buttons in "Recently Viewed"
+      document.querySelectorAll('.add-to-cart-quick').forEach((btn) => {
+        btn.addEventListener('click', function () {
+          const item = {
+            id: this.getAttribute('data-id'),
+            name: this.getAttribute('data-name'),
+            price: parseInt(this.getAttribute('data-price')),
+            image: this.getAttribute('data-image'),
+          };
+          addToCart(item);
+        });
+      });
+
+      // Check if there's a discount code in localStorage
+      const savedDiscountCode = localStorage.getItem('discountCode');
+      if (savedDiscountCode === 'SEWABYN3SVIA') {
+        discountCodeInput.value = savedDiscountCode;
+        updateCartDisplay();
+      }
+    </script>
+  </body>
+</html>

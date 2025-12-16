@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Collections - Sewa by Nessvia</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="all-collection.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Playfair+Display+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      GET 5% OFF ON YOUR FIRST RENT. USE: "SEWABYN3SVIA" AT CHECKOUT
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <a href="index.html" class="logo">Sewa by Nessvia</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="new-arrivals.html">New Arrivals</a></li>
+        <li><a href="highlights.html">Highlights</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn active"
+            >Categories <i class="fas fa-chevron-down"></i
+          ></a>
+          <div class="dropdown-content">
+            <a href="all-collection.html" class="active">All Collection</a>
+            <a href="#one-set">One Set</a>
+            <a href="#dress">Dress</a>
+            <a href="#top">Top</a>
+            <a href="#jump-suit">Jump Suit</a>
+          </div>
+        </li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+      <div class="nav-right">
+        <input type="text" class="search-bar" placeholder="Search dress..." />
+        <div class="nav-icons">
+          <a href="cart.html" class="nav-icon-link">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <a href="wishlist.html" class="nav-icon-link">
+            <i class="fas fa-heart"></i>
+          </a>
+          <a href="login.html" class="nav-icon-link">
+            <i class="fas fa-user"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <div class="collection-banner">
+      <div class="banner-overlay">
+        <div class="banner-content">
+          <h1>All Collections</h1>
+          <p>
+            Discover our complete range of elegant dresses for every occasion
+          </p>
+          <a href="#collections" class="banner-btn">
+            Explore Collections <i class="fas fa-arrow-down"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Collections Section -->
+    <section class="collections-section" id="collections">
+      <div class="collections-header">
+        <div class="header-left">
+          <h2 class="collection-title">All Collections</h2>
+          <div class="title-line"></div>
+        </div>
+        <div class="header-right">
+          <div class="collection-stats">
+            <span class="stat-item"
+              ><i class="fas fa-tshirt"></i> 24 Items</span
+            >
+            <span class="stat-item"
+              ><i class="fas fa-tag"></i> 4 Categories</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="collection-tabs">
+        <button class="tab-btn active" data-category="all">All Items</button>
+        <button class="tab-btn" data-category="dress">Dresses</button>
+        <button class="tab-btn" data-category="set">One Sets</button>
+        <button class="tab-btn" data-category="jumpsuit">Jump Suits</button>
+        <button class="tab-btn" data-category="top">Tops</button>
+      </div>
+
+      <!-- Sort Options -->
+      <div class="sort-container">
+        <div class="sort-options">
+          <span class="sort-label">Sort by:</span>
+          <select class="sort-select">
+            <option value="featured">Featured</option>
+            <option value="newest">Newest</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="popular">Most Popular</option>
+          </select>
+        </div>
+        <div class="view-options">
+          <button class="view-btn active" data-view="grid">
+            <i class="fas fa-th-large"></i>
+          </button>
+          <button class="view-btn" data-view="list">
+            <i class="fas fa-list"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Collections Grid -->
+      <div class="collections-grid grid-view">
+        <!-- Card 1 -->
+        <div class="product-card" data-category="dress">
+          <img
+            src="https://i.ibb.co.com/HfntFTFB/Snap-Insta-to-468351173-17972543819798119-6275692406861753976-n.jpg"
+            alt="Charlotte Dress"
+            class="product-image"
+          />
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-name">CHARLOTTE DRESS BY SOGNARE</h3>
+              <i class="far fa-heart heart-icon"></i>
+            </div>
+            <p class="product-price">Rp 450,000.00/4 Days</p>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="size-options">
+              <span class="size-option unavailable">S</span>
+              <span class="size-option available">M</span>
+              <span class="size-option unavailable">L</span>
+              <span class="size-option unavailable">XL</span>
+              <span class="size-option unavailable">XXL</span>
+            </div>
+            <div class="button-container">
+              <button class="add-to-cart">Add to cart</button>
+              <button class="rent-now">Rent now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="product-card" data-category="dress">
+          <img
+            src="https://i.ibb.co.com/39NZRrj0/Snap-Insta-to-458452897-1022587182685384-8479958835633264582-n.jpg"
+            alt="Leighton Dress"
+            class="product-image"
+          />
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-name">LEIGHTON DRESS BY COMA LABEL</h3>
+              <i class="far fa-heart heart-icon"></i>
+            </div>
+            <p class="product-price">Rp 175,000.00/4 Days</p>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="size-options">
+              <span class="size-option available">S</span>
+              <span class="size-option unavailable">M</span>
+              <span class="size-option unavailable">L</span>
+              <span class="size-option unavailable">XL</span>
+              <span class="size-option unavailable">XXL</span>
+            </div>
+            <div class="button-container">
+              <button class="add-to-cart">Add to cart</button>
+              <button class="rent-now">Rent now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="product-card" data-category="dress">
+          <img
+            src="https://i.ibb.co.com/67gXwgF6/Snap-Insta-to-465189735-894633029436148-8560698326578979982-n.jpg"
+            alt="Sweet Pea Dress"
+            class="product-image"
+          />
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-name">SWEET PEA DRESS BY FLORA</h3>
+              <i class="far fa-heart heart-icon"></i>
+            </div>
+            <p class="product-price">Rp 175,000.00/4 Days</p>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="size-options">
+              <span class="size-option unavailable">S</span>
+              <span class="size-option available">M</span>
+              <span class="size-option unavailable">L</span>
+              <span class="size-option unavailable">XL</span>
+              <span class="size-option unavailable">XXL</span>
+            </div>
+            <div class="button-container">
+              <button class="add-to-cart">Add to cart</button>
+              <button class="rent-now">Rent now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="product-card" data-category="set">
+          <img
+            src="https://i.ibb.co.com/ym0zCh2c/Snap-Insta-to-559737709-18247966546288018-6677574410924182948-n.webp"
+            alt="Autumn Set"
+            class="product-image"
+          />
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-name">AUTUMN SET BY RUSTIC</h3>
+              <i class="heart-icon fas fa-heart"></i>
+            </div>
+            <p class="product-price">Rp 270,000.00/4 Days</p>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="size-options">
+              <span class="size-option unavailable">S</span>
+              <span class="size-option unavailable">M</span>
+              <span class="size-option available">L</span>
+              <span class="size-option unavailable">XL</span>
+              <span class="size-option unavailable">XXL</span>
+            </div>
+            <div class="button-container">
+              <button class="add-to-cart">Add to cart</button>
+              <button class="rent-now">Rent now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="product-card" data-category="dress">
+          <img
+            src="https://i.ibb.co.com/0jqYJ0X8/Whats-App-Image-2024-01-15-at-10-30-45.jpg"
+            alt="Blush Gown"
+            class="product-image"
+          />
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-name">BLUSH EVENING GOWN BY ELEGANCE</h3>
+              <i class="far fa-heart heart-icon"></i>
+            </div>
+            <p class="product-price">Rp 550,000.00/4 Days</p>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="size-options">
+              <span class="size-option available">S</span>
+              <span class="size-option available">M</span>
+              <span class="size-option available">L</span>
+              <span class="size-option unavailable">XL</span>
+              <span class="size-option unavailable">XXL</span>
+            </div>
+            <div class="button-container">
+              <button class="add-to-cart">Add to cart</button>
+              <button class="rent-now">Rent now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="product-card" data-category="set">
+          <img
+            src="https://i.ibb.co.com/PGcL9nzr/Whats-App-Image-2024-01-15-at-10-30-46.jpg"
+            alt="Black Set"
+            class="product-image"
+          />
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-name">BLACK ELEGANT SET BY NOIR</h3>
+              <i class="far fa-heart heart-icon"></i>
+            </div>
+            <p class="product-price">Rp 380,000.00/4 Days</p>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="size-options">
+              <span class="size-option unavailable">S</span>
+              <span class="size-option available">M</span>
+              <span class="size-option unavailable">L</span>
+              <span class="size-option unavailable">XL</span>
+              <span class="size-option unavailable">XXL</span>
+            </div>
+            <div class="button-container">
+              <button class="add-to-cart">Add to cart</button>
+              <button class="rent-now">Rent now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="product-card" data-category="jumpsuit">
+          <img
+            src="https://i.ibb.co.com/jk9ZhVTW/Whats-App-Image-2024-01-15-at-10-30-46-1.jpg"
+            alt="White Jumpsuit"
+            class="product-image"
+          />
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-name">WHITE LUXURY JUMPSUIT BY CHIC</h3>
+              <i class="far fa-heart heart-icon"></i>
+            </div>
+            <p class="product-price">Rp 420,000.00/4 Days</p>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="size-options">
+              <span class="size-option available">S</span>
+              <span class="size-option available">M</span>
+              <span class="size-option unavailable">L</span>
+              <span class="size-option unavailable">XL</span>
+              <span class="size-option unavailable">XXL</span>
+            </div>
+            <div class="button-container">
+              <button class="add-to-cart">Add to cart</button>
+              <button class="rent-now">Rent now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="product-card" data-category="dress">
+          <img
+            src="https://i.ibb.co.com/9qjGn24H/Whats-App-Image-2024-01-15-at-10-30-47.jpg"
+            alt="Blue Dress"
+            class="product-image"
+          />
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-name">ROYAL BLUE DRESS BY SAPPHIRE</h3>
+              <i class="heart-icon fas fa-heart"></i>
+            </div>
+            <p class="product-price">Rp 520,000.00/4 Days</p>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="size-options">
+              <span class="size-option available">XS</span>
+              <span class="size-option available">S</span>
+              <span class="size-option available">M</span>
+              <span class="size-option unavailable">L</span>
+              <span class="size-option unavailable">XL</span>
+            </div>
+            <div class="button-container">
+              <button class="add-to-cart">Add to cart</button>
+              <button class="rent-now">Rent now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="product-card" data-category="top">
+          <img
+            src="https://i.ibb.co.com/6y9sKwSy/Whats-App-Image-2024-01-15-at-10-30-47-1.jpg"
+            alt="Designer Top"
+            class="product-image"
+          />
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-name">DESIGNER SILK TOP BY LUXE</h3>
+              <i class="far fa-heart heart-icon"></i>
+            </div>
+            <p class="product-price">Rp 280,000.00/4 Days</p>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="size-options">
+              <span class="size-option available">S</span>
+              <span class="size-option available">M</span>
+              <span class="size-option available">L</span>
+              <span class="size-option unavailable">XL</span>
+              <span class="size-option unavailable">XXL</span>
+            </div>
+            <div class="button-container">
+              <button class="add-to-cart">Add to cart</button>
+              <button class="rent-now">Rent now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="product-card" data-category="dress">
+          <img
+            src="https://i.ibb.co.com/zPhJZbhR/Whats-App-Image-2024-01-15-at-10-30-48.jpg"
+            alt="Gold Dress"
+            class="product-image"
+          />
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-name">GOLD SEQUIN DRESS BY GLAM</h3>
+              <i class="far fa-heart heart-icon"></i>
+            </div>
+            <p class="product-price">Rp 580,000.00/4 Days</p>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="size-options">
+              <span class="size-option available">S</span>
+              <span class="size-option available">M</span>
+              <span class="size-option unavailable">L</span>
+              <span class="size-option unavailable">XL</span>
+              <span class="size-option unavailable">XXL</span>
+            </div>
+            <div class="button-container">
+              <button class="add-to-cart">Add to cart</button>
+              <button class="rent-now">Rent now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="product-card" data-category="set">
+          <img
+            src="https://i.ibb.co.com/Stt6N2Np/Whats-App-Image-2024-01-15-at-10-30-48-1.jpg"
+            alt="Beige Set"
+            class="product-image"
+          />
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-name">BEIGE CASUAL SET BY MINIMAL</h3>
+              <i class="far fa-heart heart-icon"></i>
+            </div>
+            <p class="product-price">Rp 320,000.00/4 Days</p>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="size-options">
+              <span class="size-option available">M</span>
+              <span class="size-option available">L</span>
+              <span class="size-option available">XL</span>
+              <span class="size-option unavailable">XXL</span>
+            </div>
+            <div class="button-container">
+              <button class="add-to-cart">Add to cart</button>
+              <button class="rent-now">Rent now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="product-card" data-category="jumpsuit">
+          <img
+            src="https://i.ibb.co.com/d4b5q1yb/Whats-App-Image-2024-01-15-at-10-30-49.jpg"
+            alt="Black Jumpsuit"
+            class="product-image"
+          />
+          <div class="product-info">
+            <div class="product-header">
+              <h3 class="product-name">BLACK VELVET JUMPSUIT BY VELVET</h3>
+              <i class="heart-icon fas fa-heart"></i>
+            </div>
+            <p class="product-price">Rp 460,000.00/4 Days</p>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="size-options">
+              <span class="size-option available">S</span>
+              <span class="size-option available">M</span>
+              <span class="size-option available">L</span>
+              <span class="size-option unavailable">XL</span>
+              <span class="size-option unavailable">XXL</span>
+            </div>
+            <div class="button-container">
+              <button class="add-to-cart">Add to cart</button>
+              <button class="rent-now">Rent now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination">
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <span class="page-dots">...</span>
+        <button class="page-btn">Next</button>
+      </div>
+    </section>
+
+    <!-- Categories Summary -->
+    <div class="categories-summary">
+      <div class="category-item">
+        <div class="category-icon">
+          <i class="fas fa-female"></i>
+        </div>
+        <h3>Dresses</h3>
+        <p>Elegant gowns, cocktail dresses, and evening wear</p>
+        <a href="#dress" class="category-link">View Collection →</a>
+      </div>
+      <div class="category-item">
+        <div class="category-icon">
+          <i class="fas fa-tshirt"></i>
+        </div>
+        <h3>One Sets</h3>
+        <p>Coordinated sets for effortless style</p>
+        <a href="#set" class="category-link">View Collection →</a>
+      </div>
+      <div class="category-item">
+        <div class="category-icon">
+          <i class="fas fa-user-tie"></i>
+        </div>
+        <h3>Jump Suits</h3>
+        <p>Modern jumpsuits for any occasion</p>
+        <a href="#jumpsuit" class="category-link">View Collection →</a>
+      </div>
+      <div class="category-item">
+        <div class="category-icon">
+          <i class="fas fa-vest"></i>
+        </div>
+        <h3>Tops</h3>
+        <p>Designer tops to complete your look</p>
+        <a href="#top" class="category-link">View Collection →</a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">Sewa by Nessvia</div>
+          <p style="color: #ccc; font-size: 14px">Sewa.by.nessvia.id</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>CUSTOMER INFORMATION</h3>
+          <ul class="footer-links">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="#">Shipping Information</a></li>
+            <li><a href="#">Return Information</a></li>
+            <li><a href="#">How to Rent</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>INFORMATION</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="https://wa.me/6287876928748">Whatsapp: +6287876928748</a>
+            </li>
+            <li><a href="mailto:sewanessvia.id">Email: Sewanessvia.id</a></li>
+          </ul>
+
+          <h3 style="margin-top: 30px">FOLLOW US ON INSTAGRAM</h3>
+          <p style="color: #ccc; font-size: 14px">@sewabynessvia</p>
+          <div class="social-icons" style="margin-top: 15px">
+            <a
+              href="https://instagram.com/sewabynessvia"
+              target="_blank"
+              style="color: #ccc; margin-right: 15px"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://tiktok.com/@sewabynessvia"
+              target="_blank"
+              style="color: #ccc"
+            >
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>SIGN UP AND SAVE</h3>
+          <p style="color: #ccc; font-size: 14px; margin-bottom: 15px">
+            Subscribe to get special offers, newest collection, and rent due.
+          </p>
+          <div class="newsletter">
+            <input type="email" placeholder="Enter your email..." />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-links" style="display: flex; gap: 150px">
+          <a href="#"
+            ><i class="fas fa-shipping-fast"></i> Shipping to Nusantara</a
+          >
+          <a href="#"><i class="fas fa-diamond"></i> Classy Collections</a>
+          <a href="#"
+            ><i class="fas fa-credit-card"></i> Multiple Payment Methods</a
+          >
+          <a href="#"><i class="fas fa-headset"></i> Fast Response Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Heart icon functionality
+        const heartIcons = document.querySelectorAll('.heart-icon');
+
+        heartIcons.forEach((icon) => {
+          icon.addEventListener('click', function () {
+            if (this.classList.contains('far')) {
+              this.classList.remove('far');
+              this.classList.add('fas');
+              this.style.color = '#ff1493';
+              showNotification('Added to wishlist!');
+            } else {
+              this.classList.remove('fas');
+              this.classList.add('far');
+              this.style.color = '#000';
+              showNotification('Removed from wishlist!');
+            }
+          });
+        });
+
+        // Add to cart functionality
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+        addToCartButtons.forEach((button) => {
+          button.addEventListener('click', function () {
+            const productName =
+              this.closest('.product-card').querySelector(
+                '.product-name'
+              ).textContent;
+            showNotification(`${productName} added to cart!`);
+
+            // Add animation
+            this.style.backgroundColor = '#4CAF50';
+            this.style.color = 'white';
+            this.textContent = 'Added!';
+
+            setTimeout(() => {
+              this.style.backgroundColor = '';
+              this.style.color = '';
+              this.textContent = 'Add to cart';
+            }, 1500);
+          });
+        });
+
+        // Rent now functionality
+        const rentNowButtons = document.querySelectorAll('.rent-now');
+
+        rentNowButtons.forEach((button) => {
+          button.addEventListener('click', function () {
+            const productName =
+              this.closest('.product-card').querySelector(
+                '.product-name'
+              ).textContent;
+            showNotification(`Proceeding to rent: ${productName}`);
+
+            // Redirect to signup page if not logged in, or cart page if logged in
+            const isLoggedIn = localStorage.getItem('isLoggedIn');
+            if (isLoggedIn === 'true') {
+              window.location.href = 'cart.html';
+            } else {
+              window.location.href = 'signup.html';
+            }
+          });
+        });
+
+        // Tab filter functionality
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const productCards = document.querySelectorAll('.product-card');
+
+        tabButtons.forEach((button) => {
+          button.addEventListener('click', function () {
+            // Remove active class from all buttons
+            tabButtons.forEach((btn) => btn.classList.remove('active'));
+            // Add active class to clicked button
+            this.classList.add('active');
+
+            const category = this.getAttribute('data-category');
+
+            // Filter cards
+            productCards.forEach((card) => {
+              if (
+                category === 'all' ||
+                card.getAttribute('data-category') === category
+              ) {
+                card.style.display = 'block';
+                setTimeout(() => {
+                  card.style.opacity = '1';
+                  card.style.transform = 'scale(1)';
+                }, 50);
+              } else {
+                card.style.opacity = '0';
+                card.style.transform = 'scale(0.8)';
+                setTimeout(() => {
+                  card.style.display = 'none';
+                }, 300);
+              }
+            });
+          });
+        });
+
+        // Sort functionality
+        const sortSelect = document.querySelector('.sort-select');
+        sortSelect.addEventListener('change', function () {
+          const container = document.querySelector('.collections-grid');
+          const cards = Array.from(productCards);
+
+          cards.sort((a, b) => {
+            const priceA = parseInt(
+              a
+                .querySelector('.product-price')
+                .textContent.replace(/[^0-9]/g, '')
+            );
+            const priceB = parseInt(
+              b
+                .querySelector('.product-price')
+                .textContent.replace(/[^0-9]/g, '')
+            );
+
+            switch (this.value) {
+              case 'price-low':
+                return priceA - priceB;
+              case 'price-high':
+                return priceB - priceA;
+              case 'newest':
+                // For demo, random sort for newest
+                return Math.random() - 0.5;
+              case 'popular':
+                const ratingA = parseFloat(
+                  a.querySelector('.fa-star')?.parentElement?.textContent || '0'
+                );
+                const ratingB = parseFloat(
+                  b.querySelector('.fa-star')?.parentElement?.textContent || '0'
+                );
+                return ratingB - ratingA;
+              default:
+                return 0;
+            }
+          });
+
+          // Reorder cards
+          cards.forEach((card) => {
+            container.appendChild(card);
+          });
+        });
+
+        // View toggle functionality
+        const viewButtons = document.querySelectorAll('.view-btn');
+        const collectionsGrid = document.querySelector('.collections-grid');
+
+        viewButtons.forEach((button) => {
+          button.addEventListener('click', function () {
+            // Remove active class from all buttons
+            viewButtons.forEach((btn) => btn.classList.remove('active'));
+            // Add active class to clicked button
+            this.classList.add('active');
+
+            const view = this.getAttribute('data-view');
+
+            // Change view
+            collectionsGrid.classList.remove('grid-view', 'list-view');
+            collectionsGrid.classList.add(`${view}-view`);
+          });
+        });
+
+        // Pagination functionality
+        const pageButtons = document.querySelectorAll('.page-btn');
+
+        pageButtons.forEach((button) => {
+          button.addEventListener('click', function () {
+            // Remove active class from all buttons
+            pageButtons.forEach((btn) => btn.classList.remove('active'));
+            // Add active class to clicked button
+            this.classList.add('active');
+
+            // In a real application, this would load new page content
+            if (this.textContent !== 'Next' && this.textContent !== '...') {
+              showNotification(`Loading page ${this.textContent}...`);
+            }
+          });
+        });
+
+        // Size selection functionality
+        const sizeOptions = document.querySelectorAll('.size-option.available');
+
+        sizeOptions.forEach((option) => {
+          option.addEventListener('click', function () {
+            // Remove selected class from all sizes in this card
+            const cardSizes =
+              this.closest('.size-options').querySelectorAll('.size-option');
+            cardSizes.forEach((size) => size.classList.remove('selected'));
+
+            // Add selected class to clicked size
+            this.classList.add('selected');
+
+            // Add visual feedback
+            this.style.backgroundColor = '#000';
+            this.style.color = '#fff';
+            this.style.padding = '2px 12px';
+            this.style.borderRadius = '3px';
+          });
+        });
+
+        // Search functionality
+        const searchBar = document.querySelector('.search-bar');
+        if (searchBar) {
+          searchBar.addEventListener('input', function () {
+            const searchTerm = this.value.toLowerCase();
+
+            productCards.forEach((card) => {
+              const productName = card
+                .querySelector('.product-name')
+                .textContent.toLowerCase();
+
+              if (productName.includes(searchTerm) || searchTerm === '') {
+                card.style.display = 'block';
+              } else {
+                card.style.display = 'none';
+              }
+            });
+          });
+        }
+
+        // Helper function for notifications
+        function showNotification(message) {
+          // Create notification element
+          const notification = document.createElement('div');
+          notification.className = 'notification';
+          notification.innerHTML = `
+                    <i class="fas fa-check-circle"></i>
+                    <span>${message}</span>
+                `;
+
+          // Add to body
+          document.body.appendChild(notification);
+
+          // Show notification
+          setTimeout(() => {
+            notification.classList.add('show');
+          }, 10);
+
+          // Remove notification after 3 seconds
+          setTimeout(() => {
+            notification.classList.remove('show');
+            setTimeout(() => {
+              notification.remove();
+            }, 300);
+          }, 3000);
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener('click', function (e) {
+            if (this.getAttribute('href') !== '#') {
+              e.preventDefault();
+              const target = document.querySelector(this.getAttribute('href'));
+              if (target) {
+                target.scrollIntoView({
+                  behavior: 'smooth',
+                  block: 'start',
+                });
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

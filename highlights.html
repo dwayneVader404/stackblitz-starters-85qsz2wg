@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlights - Sewa by Nessvia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="highlights.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Playfair+Display+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        GET 5% OFF ON YOUR FIRST RENT. USE: "SEWABYN3SVIA" AT CHECKOUT
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Sewa by Nessvia</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="new-arrivals.html">New Arrivals</a></li>
+            <li><a href="highlights.html" class="active">Highlights</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Categories <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="all-collection.html">All Collection</a>
+                    <a href="oneset.html">One Set</a>
+                    <a href="dress.html">Dress</a>
+                    <a href="top.html">Top</a>
+                    <a href="jump-suit.html">Jump Suit</a>
+                </div>
+            </li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <div class="nav-right">
+            <input type="text" class="search-bar" placeholder="Search highlights...">
+            <div class="nav-icons">
+                <a href="cart.html" class="nav-icon-link">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <a href="wishlist.html" class="nav-icon-link">
+                    <i class="fas fa-heart"></i>
+                </a>
+                <a href="login.html" class="nav-icon-link">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <div class="highlights-banner">
+        <div class="highlights-banner-overlay">
+            <div class="highlights-banner-content">
+                <h1>Customer Highlights</h1>
+                <p>Real customers. Real moments. See how our dresses come to life on special occasions.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Upload Section -->
+    <div class="upload-section">
+        <div class="upload-container">
+            <div class="upload-info">
+                <h2><i class="fas fa-camera"></i> Share Your Moment</h2>
+                <p>Rented a dress from us and had an amazing time? Share your photos with us and get featured on our highlights page!</p>
+                <div class="upload-benefits">
+                    <div class="benefit">
+                        <i class="fas fa-gift"></i>
+                        <span>Get 10% discount on your next rental</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fas fa-star"></i>
+                        <span>Chance to be featured on our Instagram</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fas fa-tag"></i>
+                        <span>Special rewards for the best photos</span>
+                    </div>
+                </div>
+                <button class="upload-btn" id="uploadTrigger">
+                    <i class="fas fa-upload"></i> Upload Your Photos
+                </button>
+            </div>
+            <div class="upload-image">
+                <img src="https://i.ibb.co.com/0jqYJ0X8/Whats-App-Image-2024-01-15-at-10-30-45.jpg" alt="Customer Photo Example">
+            </div>
+        </div>
+    </div>
+
+    <!-- Upload Modal -->
+    <div class="upload-modal" id="uploadModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Share Your Experience</h3>
+                <button class="close-modal" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="uploadForm">
+                    <div class="form-group">
+                        <label for="customerName">Your Name</label>
+                        <input type="text" id="customerName" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerEmail">Email Address</label>
+                        <input type="email" id="customerEmail" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dressName">Dress Name / Code</label>
+                        <input type="text" id="dressName" placeholder="Which dress did you rent?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventType">Event Type</label>
+                        <select id="eventType" required>
+                            <option value="">Select event</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="party">Party</option>
+                            <option value="formal">Formal Event</option>
+                            <option value="graduation">Graduation</option>
+                            <option value="birthday">Birthday</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="photoUpload">Upload Photos (Max 3)</label>
+                        <div class="upload-area" id="uploadArea">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Drag & drop photos here or click to browse</p>
+                            <input type="file" id="photoUpload" accept="image/*" multiple>
+                        </div>
+                        <div class="file-preview" id="filePreview"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerMessage">Your Experience (Optional)</label>
+                        <textarea id="customerMessage" placeholder="Tell us about your experience wearing our dress..." rows="3"></textarea>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="permission" required>
+                        <label for="permission">I give permission to Sewa by Nessvia to use my photos on their website and social media</label>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Submit Photos
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filter Section -->
+    <div class="highlights-filter">
+        <div class="filter-container">
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">All Photos</button>
+                <button class="filter-tab" data-filter="wedding">Weddings</button>
+                <button class="filter-tab" data-filter="party">Parties</button>
+                <button class="filter-tab" data-filter="formal">Formal Events</button>
+                <button class="filter-tab" data-filter="graduation">Graduations</button>
+                <button class="filter-tab" data-filter="birthday">Birthdays</button>
+            </div>
+            <div class="sort-options">
+                <span class="sort-label">Sort by:</span>
+                <select class="sort-select" id="sortSelect">
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                    <option value="popular">Most Liked</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="highlights-gallery">
+        <div class="gallery-container">
+            <!-- Wedding Photos -->
+            <div class="gallery-item wedding" data-date="2024-03-15" data-likes="42">
+                <div class="photo-container">
+                    <img src="https://i.ibb.co.com/HfntFTFB/Snap-Insta-to-468351173-17972543819798119-6275692406861753976-n.jpg" alt="Wedding Guest Dress">
+                    <div class="photo-overlay">
+                        <div class="overlay-content">
+                            <span class="event-tag">Wedding</span>
+                            <div class="photo-actions">
+                                <button class="like-btn">
+                                    <i class="far fa-heart"></i>
+                                    <span class="like-count">42</span>
+                                </button>
+                                <button class="share-btn">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-info">
+                    <h4 class="customer-name">Sarah Johnson</h4>
+                    <p class="dress-name">Charlotte Dress by Sognare</p>
+                    <p class="photo-date">March 15, 2024</p>
+                    <div class="photo-caption">
+                        "Absolutely loved this dress for my cousin's wedding! Received so many compliments."
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item party" data-date="2024-03-10" data-likes="38">
+                <div class="photo-container">
+                    <img src="https://i.ibb.co.com/0jqYJ0X8/Whats-App-Image-2024-01-15-at-10-30-45.jpg" alt="Party Dress">
+                    <div class="photo-overlay">
+                        <div class="overlay-content">
+                            <span class="event-tag">Party</span>
+                            <div class="photo-actions">
+                                <button class="like-btn">
+                                    <i class="far fa-heart"></i>
+                                    <span class="like-count">38</span>
+                                </button>
+                                <button class="share-btn">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-info">
+                    <h4 class="customer-name">Michelle Lee</h4>
+                    <p class="dress-name">Blush Pink Evening Gown</p>
+                    <p class="photo-date">March 10, 2024</p>
+                    <div class="photo-caption">
+                        "Perfect for my birthday party! The dress fit like a dream and was so comfortable."
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formal Events -->
+            <div class="gallery-item formal" data-date="2024-03-05" data-likes="29">
+                <div class="photo-container">
+                    <img src="https://i.ibb.co.com/9qjGn24H/Whats-App-Image-2024-01-15-at-10-30-47.jpg" alt="Formal Event Dress">
+                    <div class="photo-overlay">
+                        <div class="overlay-content">
+                            <span class="event-tag">Formal Event</span>
+                            <div class="photo-actions">
+                                <button class="like-btn">
+                                    <i class="far fa-heart"></i>
+                                    <span class="like-count">29</span>
+                                </button>
+                                <button class="share-btn">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-info">
+                    <h4 class="customer-name">Amanda Chen</h4>
+                    <p class="dress-name">Royal Blue Evening Dress</p>
+                    <p class="photo-date">March 5, 2024</p>
+                    <div class="photo-caption">
+                        "Wore this to a charity gala. The quality exceeded my expectations!"
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item graduation" data-date="2024-02-28" data-likes="51">
+                <div class="photo-container">
+                    <img src="https://i.ibb.co.com/39NZRrj0/Snap-Insta-to-458452897-1022587182685384-8479958835633264582-n.jpg" alt="Graduation Dress">
+                    <div class="photo-overlay">
+                        <div class="overlay-content">
+                            <span class="event-tag">Graduation</span>
+                            <div class="photo-actions">
+                                <button class="like-btn">
+                                    <i class="far fa-heart"></i>
+                                    <span class="like-count">51</span>
+                                </button>
+                                <button class="share-btn">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-info">
+                    <h4 class="customer-name">Jessica Wong</h4>
+                    <p class="dress-name">Leighton Dress by Coma Label</p>
+                    <p class="photo-date">February 28, 2024</p>
+                    <div class="photo-caption">
+                        "Graduation day memories made perfect with this beautiful dress!"
+                    </div>
+                </div>
+            </div>
+
+            <!-- Birthday -->
+            <div class="gallery-item birthday" data-date="2024-02-20" data-likes="45">
+                <div class="photo-container">
+                    <img src="https://i.ibb.co.com/zPhJZbhR/Whats-App-Image-2024-01-15-at-10-30-48.jpg" alt="Birthday Celebration">
+                    <div class="photo-overlay">
+                        <div class="overlay-content">
+                            <span class="event-tag">Birthday</span>
+                            <div class="photo-actions">
+                                <button class="like-btn">
+                                    <i class="far fa-heart"></i>
+                                    <span class="like-count">45</span>
+                                </button>
+                                <button class="share-btn">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-info">
+                    <h4 class="customer-name">Rina Sato</h4>
+                    <p class="dress-name">Black Sequin Party Dress</p>
+                    <p class="photo-date">February 20, 2024</p>
+                    <div class="photo-caption">
+                        "30th birthday celebration was extra special in this stunning dress!"
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wedding -->
+            <div class="gallery-item wedding" data-date="2024-02-15" data-likes="67">
+                <div class="photo-container">
+                    <img src="https://i.ibb.co.com/67gXwgF6/Snap-Insta-to-465189735-894633029436148-8560698326578979982-n.jpg" alt="Wedding Guest">
+                    <div class="photo-overlay">
+                        <div class="overlay-content">
+                            <span class="event-tag">Wedding</span>
+                            <div class="photo-actions">
+                                <button class="like-btn">
+                                    <i class="far fa-heart"></i>
+                                    <span class="like-count">67</span>
+                                </button>
+                                <button class="share-btn">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-info">
+                    <h4 class="customer-name">Lisa Park</h4>
+                    <p class="dress-name">White Summer Dress by Flora</p>
+                    <p class="photo-date">February 15, 2024</p>
+                    <div class="photo-caption">
+                        "As a bridesmaid, I needed something elegant yet comfortable. This was perfect!"
+                    </div>
+                </div>
+            </div>
+
+            <!-- Party -->
+            <div class="gallery-item party" data-date="2024-02-10" data-likes="33">
+                <div class="photo-container">
+                    <img src="https://i.ibb.co.com/0jqYJ0X8/Whats-App-Image-2024-01-15-at-10-30-45.jpg" alt="Cocktail Party">
+                    <div class="photo-overlay">
+                        <div class="overlay-content">
+                            <span class="event-tag">Party</span>
+                            <div class="photo-actions">
+                                <button class="like-btn">
+                                    <i class="far fa-heart"></i>
+                                    <span class="like-count">33</span>
+                                </button>
+                                <button class="share-btn">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-info">
+                    <h4 class="customer-name">Maria Garcia</h4>
+                    <p class="dress-name">Red Velvet Evening Dress</p>
+                    <p class="photo-date">February 10, 2024</p>
+                    <div class="photo-caption">
+                        "Turned heads at the office holiday party. Will definitely rent again!"
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formal Event -->
+            <div class="gallery-item formal" data-date="2024-02-05" data-likes="41">
+                <div class="photo-container">
+                    <img src="https://i.ibb.co.com/zPhJZbhR/Whats-App-Image-2024-01-15-at-10-30-48.jpg" alt="Award Ceremony">
+                    <div class="photo-overlay">
+                        <div class="overlay-content">
+                            <span class="event-tag">Formal Event</span>
+                            <div class="photo-actions">
+                                <button class="like-btn">
+                                    <i class="far fa-heart"></i>
+                                    <span class="like-count">41</span>
+                                </button>
+                                <button class="share-btn">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-info">
+                    <h4 class="customer-name">Sophie Williams</h4>
+                    <p class="dress-name">Gold Sequin Gala Dress</p>
+                    <p class="photo-date">February 5, 2024</p>
+                    <div class="photo-caption">
+                        "Received an award at work and felt like a celebrity in this dress!"
+                    </div>
+                </div>
+            </div>
+
+            <!-- Graduation -->
+            <div class="gallery-item graduation" data-date="2024-01-30" data-likes="58">
+                <div class="photo-container">
+                    <img src="https://i.ibb.co.com/9qjGn24H/Whats-App-Image-2024-01-15-at-10-30-47.jpg" alt="Master Graduation">
+                    <div class="photo-overlay">
+                        <div class="overlay-content">
+                            <span class="event-tag">Graduation</span>
+                            <div class="photo-actions">
+                                <button class="like-btn">
+                                    <i class="far fa-heart"></i>
+                                    <span class="like-count">58</span>
+                                </button>
+                                <button class="share-btn">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-info">
+                    <h4 class="customer-name">Nina Patel</h4>
+                    <p class="dress-name">Royal Blue Evening Dress</p>
+                    <p class="photo-date">January 30, 2024</p>
+                    <div class="photo-caption">
+                        "Master's graduation ceremony was unforgettable. The dress made me feel confident!"
+                    </div>
+                </div>
+            </div>
+
+            <!-- Birthday -->
+            <div class="gallery-item birthday" data-date="2024-01-25" data-likes="36">
+                <div class="photo-container">
+                    <img src="https://i.ibb.co.com/39NZRrj0/Snap-Insta-to-458452897-1022587182685384-8479958835633264582-n.jpg" alt="Surprise Birthday">
+                    <div class="photo-overlay">
+                        <div class="overlay-content">
+                            <span class="event-tag">Birthday</span>
+                            <div class="photo-actions">
+                                <button class="like-btn">
+                                    <i class="far fa-heart"></i>
+                                    <span class="like-count">36</span>
+                                </button>
+                                <button class="share-btn">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-info">
+                    <h4 class="customer-name">Angela Davis</h4>
+                    <p class="dress-name">Leighton Dress by Coma Label</p>
+                    <p class="photo-date">January 25, 2024</p>
+                    <div class="photo-caption">
+                        "Best birthday surprise from my husband, and the perfect dress to match!"
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wedding -->
+            <div class="gallery-item wedding" data-date="2024-01-20" data-likes="72">
+                <div class="photo-container">
+                    <img src="https://i.ibb.co.com/HfntFTFB/Snap-Insta-to-468351173-17972543819798119-6275692406861753976-n.jpg" alt="Destination Wedding">
+                    <div class="photo-overlay">
+                        <div class="overlay-content">
+                            <span class="event-tag">Wedding</span>
+                            <div class="photo-actions">
+                                <button class="like-btn">
+                                    <i class="far fa-heart"></i>
+                                    <span class="like-count">72</span>
+                                </button>
+                                <button class="share-btn">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-info">
+                    <h4 class="customer-name">Clara Schmidt</h4>
+                    <p class="dress-name">Charlotte Dress by Sognare</p>
+                    <p class="photo-date">January 20, 2024</p>
+                    <div class="photo-caption">
+                        "Destination wedding in Bali. The dress traveled well and looked amazing in photos!"
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formal Event -->
+            <div class="gallery-item formal" data-date="2024-01-15" data-likes="49">
+                <div class="photo-container">
+                    <img src="https://i.ibb.co.com/67gXwgF6/Snap-Insta-to-465189735-894633029436148-8560698326578979982-n.jpg" alt="Business Conference">
+                    <div class="photo-overlay">
+                        <div class="overlay-content">
+                            <span class="event-tag">Formal Event</span>
+                            <div class="photo-actions">
+                                <button class="like-btn">
+                                    <i class="far fa-heart"></i>
+                                    <span class="like-count">49</span>
+                                </button>
+                                <button class="share-btn">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-info">
+                    <h4 class="customer-name">Elena Rodriguez</h4>
+                    <p class="dress-name">White Summer Dress by Flora</p>
+                    <p class="photo-date">January 15, 2024</p>
+                    <div class="photo-caption">
+                        "Spoke at an international conference and felt professional yet stylish."
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load More Button -->
+    <div class="load-more-container">
+        <button class="load-more-btn" id="loadMoreBtn">
+            <i class="fas fa-plus"></i> Load More Photos
+        </button>
+    </div>
+
+    <!-- Photo Modal -->
+    <div class="photo-modal" id="photoModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image-container">
+                    <img id="modalImage" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <div class="modal-header">
+                        <h3 id="modalCustomerName"></h3>
+                        <span class="modal-event-tag" id="modalEventTag"></span>
+                    </div>
+                    <p class="modal-dress-name" id="modalDressName"></p>
+                    <p class="modal-date" id="modalDate"></p>
+                    <div class="modal-caption" id="modalCaption"></div>
+                    <div class="modal-actions">
+                        <button class="modal-like-btn">
+                            <i class="far fa-heart"></i>
+                            <span id="modalLikeCount">0</span>
+                        </button>
+                        <button class="modal-share-btn">
+                            <i class="fas fa-share-alt"></i> Share
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">Sewa by Nessvia</div>
+                <p style="color: #ccc; font-size: 14px;">Sewa.by.nessvia.id</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>CUSTOMER INFORMATION</h3>
+                <ul class="footer-links">
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="#">Shipping Information</a></li>
+                    <li><a href="#">Return Information</a></li>
+                    <li><a href="#">How to Rent</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>INFORMATION</h3>
+                <ul class="footer-links">
+                    <li><a href="https://wa.me/6287876928748">Whatsapp: +6287876928748</a></li>
+                    <li><a href="mailto:sewanessvia.id">Email: Sewanessvia.id</a></li>
+                </ul>
+                
+                <h3 style="margin-top: 30px;">FOLLOW US ON INSTAGRAM</h3>
+                <p style="color: #ccc; font-size: 14px;">@sewabynessvia</p>
+                <div class="social-icons" style="margin-top: 15px;">
+                    <a href="https://instagram.com/sewabynessvia" target="_blank" style="color: #ccc; margin-right: 15px;">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://tiktok.com/@sewabynessvia" target="_blank" style="color: #ccc;">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>SIGN UP AND SAVE</h3>
+                <p style="color: #ccc; font-size: 14px; margin-bottom: 15px;">Subscribe to get special offers, newest collection, and rent due.</p>
+                <div class="newsletter">
+                    <input type="email" placeholder="Enter your email...">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-links" style="display: flex; gap: 150px;">
+                <a href="#"><i class="fas fa-shipping-fast"></i> Shipping to Nusantara</a>
+                <a href="#"><i class="fas fa-diamond"></i> Classy Collections</a>
+                <a href="#"><i class="fas fa-credit-card"></i> Multiple Payment Methods</a>
+                <a href="#"><i class="fas fa-headset"></i> Fast Response Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Upload Modal Functionality
+            const uploadModal = document.getElementById('uploadModal');
+            const uploadTrigger = document.getElementById('uploadTrigger');
+            const closeModal = document.getElementById('closeModal');
+            const uploadForm = document.getElementById('uploadForm');
+            const uploadArea = document.getElementById('uploadArea');
+            const photoUpload = document.getElementById('photoUpload');
+            const filePreview = document.getElementById('filePreview');
+
+            // Open upload modal
+            uploadTrigger.addEventListener('click', () => {
+                uploadModal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            });
+
+            // Close upload modal
+            closeModal.addEventListener('click', () => {
+                uploadModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            });
+
+            // Close modal when clicking outside
+            uploadModal.addEventListener('click', (e) => {
+                if (e.target === uploadModal) {
+                    uploadModal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+
+            // File upload functionality
+            uploadArea.addEventListener('click', () => {
+                photoUpload.click();
+            });
+
+            uploadArea.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                uploadArea.style.backgroundColor = '#f0f8ff';
+            });
+
+            uploadArea.addEventListener('dragleave', () => {
+                uploadArea.style.backgroundColor = '';
+            });
+
+            uploadArea.addEventListener('drop', (e) => {
+                e.preventDefault();
+                uploadArea.style.backgroundColor = '';
+                const files = e.dataTransfer.files;
+                handleFiles(files);
+            });
+
+            photoUpload.addEventListener('change', (e) => {
+                handleFiles(e.target.files);
+            });
+
+            function handleFiles(files) {
+                filePreview.innerHTML = '';
+                const maxFiles = 3;
+                const fileCount = Math.min(files.length, maxFiles);
+
+                for (let i = 0; i < fileCount; i++) {
+                    const file = files[i];
+                    if (!file.type.startsWith('image/')) continue;
+
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        const fileItem = document.createElement('div');
+                        fileItem.className = 'file-item';
+                        fileItem.innerHTML = `
+                            <img src="${e.target.result}" alt="Preview ${i+1}">
+                            <span>${file.name}</span>
+                            <button type="button" class="remove-file">&times;</button>
+                        `;
+                        filePreview.appendChild(fileItem);
+
+                        // Add remove functionality
+                        const removeBtn = fileItem.querySelector('.remove-file');
+                        removeBtn.addEventListener('click', () => {
+                            fileItem.remove();
+                        });
+                    };
+                    reader.readAsDataURL(file);
+                }
+            }
+
+            // Form submission
+            uploadForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                // Show success message
+                showNotification('Thank you for sharing your photos! We will review them and get in touch soon.');
+                
+                // Reset form
+                uploadForm.reset();
+                filePreview.innerHTML = '';
+                
+                // Close modal
+                uploadModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            });
+
+            // Filter functionality
+            const filterTabs = document.querySelectorAll('.filter-tab');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterTabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Remove active class from all tabs
+                    filterTabs.forEach(t => t.classList.remove('active'));
+                    
+                    // Add active class to clicked tab
+                    tab.classList.add('active');
+                    
+                    const filterValue = tab.getAttribute('data-filter');
+                    
+                    // Filter gallery items
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.classList.contains(filterValue)) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'scale(1)';
+                            }, 50);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'scale(0.9)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+
+            // Sort functionality
+            const sortSelect = document.getElementById('sortSelect');
+            sortSelect.addEventListener('change', function() {
+                const container = document.querySelector('.gallery-container');
+                const visibleItems = Array.from(galleryItems).filter(item => 
+                    item.style.display !== 'none'
+                );
+                
+                visibleItems.sort((a, b) => {
+                    const dateA = new Date(a.getAttribute('data-date'));
+                    const dateB = new Date(b.getAttribute('data-date'));
+                    const likesA = parseInt(a.getAttribute('data-likes'));
+                    const likesB = parseInt(b.getAttribute('data-likes'));
+                    
+                    switch(this.value) {
+                        case 'newest':
+                            return dateB - dateA;
+                        case 'oldest':
+                            return dateA - dateB;
+                        case 'popular':
+                            return likesB - likesA;
+                        default:
+                            return 0;
+                    }
+                });
+                
+                // Reorder items
+                visibleItems.forEach(item => {
+                    container.appendChild(item);
+                });
+            });
+
+            // Like functionality
+            const likeButtons = document.querySelectorAll('.like-btn, .modal-like-btn');
+            
+            likeButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const likeIcon = this.querySelector('.fa-heart');
+                    const likeCount = this.querySelector('.like-count') || this.querySelector('#modalLikeCount');
+                    
+                    if (likeIcon.classList.contains('far')) {
+                        likeIcon.classList.remove('far');
+                        likeIcon.classList.add('fas');
+                        likeIcon.style.color = '#ff1493';
+                        
+                        let currentCount = parseInt(likeCount.textContent);
+                        likeCount.textContent = currentCount + 1;
+                        
+                        if (this.classList.contains('like-btn')) {
+                            showNotification('Liked this photo!');
+                        }
+                    } else {
+                        likeIcon.classList.remove('fas');
+                        likeIcon.classList.add('far');
+                        likeIcon.style.color = '';
+                        
+                        let currentCount = parseInt(likeCount.textContent);
+                        likeCount.textContent = currentCount - 1;
+                    }
+                });
+            });
+
+            // Photo Modal Functionality
+            const photoModal = document.getElementById('photoModal');
+            const modalClose = document.getElementById('modalClose');
+            const modalImage = document.getElementById('modalImage');
+            const modalCustomerName = document.getElementById('modalCustomerName');
+            const modalEventTag = document.getElementById('modalEventTag');
+            const modalDressName = document.getElementById('modalDressName');
+            const modalDate = document.getElementById('modalDate');
+            const modalCaption = document.getElementById('modalCaption');
+            const modalLikeCount = document.getElementById('modalLikeCount');
+
+            // Open photo modal when clicking on gallery images
+            galleryItems.forEach(item => {
+                const image = item.querySelector('img');
+                const customerName = item.querySelector('.customer-name').textContent;
+                const eventTag = item.querySelector('.event-tag').textContent;
+                const dressName = item.querySelector('.dress-name').textContent;
+                const date = item.querySelector('.photo-date').textContent;
+                const caption = item.querySelector('.photo-caption').textContent;
+                const likes = item.getAttribute('data-likes');
+                
+                image.addEventListener('click', () => {
+                    modalImage.src = image.src;
+                    modalCustomerName.textContent = customerName;
+                    modalEventTag.textContent = eventTag;
+                    modalDressName.textContent = dressName;
+                    modalDate.textContent = date;
+                    modalCaption.textContent = caption;
+                    modalLikeCount.textContent = likes;
+                    
+                    photoModal.style.display = 'flex';
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+
+            // Close photo modal
+            modalClose.addEventListener('click', () => {
+                photoModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            });
+
+            // Close modal when clicking outside
+            photoModal.addEventListener('click', (e) => {
+                if (e.target === photoModal) {
+                    photoModal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+
+            // Load More functionality
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            let currentItems = 12; // Initially showing 12 items
+            
+            // Initially hide some items
+            galleryItems.forEach((item, index) => {
+                if (index >= currentItems) {
+                    item.style.display = 'none';
+                }
+            });
+
+            loadMoreBtn.addEventListener('click', () => {
+                // Show next 6 items
+                const itemsToShow = currentItems + 6;
+                
+                galleryItems.forEach((item, index) => {
+                    if (index < itemsToShow) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 50);
+                    }
+                });
+                
+                currentItems = itemsToShow;
+                
+                // Hide button if all items are shown
+                if (currentItems >= galleryItems.length) {
+                    loadMoreBtn.style.display = 'none';
+                    showNotification('All photos loaded!');
+                }
+            });
+
+            // Share functionality
+            const shareButtons = document.querySelectorAll('.share-btn, .modal-share-btn');
+            
+            shareButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    if (navigator.share) {
+                        navigator.share({
+                            title: 'Sewa by Nessvia - Customer Highlights',
+                            text: 'Check out this beautiful dress from Sewa by Nessvia!',
+                            url: window.location.href
+                        });
+                    } else {
+                        // Fallback for browsers that don't support Web Share API
+                        navigator.clipboard.writeText(window.location.href).then(() => {
+                            showNotification('Link copied to clipboard!');
+                        });
+                    }
+                });
+            });
+
+            // Search functionality
+            const searchBar = document.querySelector('.search-bar');
+            if (searchBar) {
+                searchBar.addEventListener('input', function() {
+                    const searchTerm = this.value.toLowerCase();
+                    
+                    galleryItems.forEach(item => {
+                        const customerName = item.querySelector('.customer-name').textContent.toLowerCase();
+                        const dressName = item.querySelector('.dress-name').textContent.toLowerCase();
+                        const caption = item.querySelector('.photo-caption').textContent.toLowerCase();
+                        
+                        if (customerName.includes(searchTerm) || 
+                            dressName.includes(searchTerm) || 
+                            caption.includes(searchTerm) || 
+                            searchTerm === '') {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            }
+
+            // Helper function for notifications
+            function showNotification(message) {
+                // Create notification element
+                const notification = document.createElement('div');
+                notification.className = 'highlights-notification';
+                notification.innerHTML = `
+                    <i class="fas fa-check-circle"></i>
+                    <span>${message}</span>
+                `;
+                
+                // Add to body
+                document.body.appendChild(notification);
+                
+                // Show notification
+                setTimeout(() => {
+                    notification.classList.add('show');
+                }, 10);
+                
+                // Remove notification after 3 seconds
+                setTimeout(() => {
+                    notification.classList.remove('show');
+                    setTimeout(() => {
+                        notification.remove();
+                    }, 300);
+                }, 3000);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account - Sewa by Nessvia</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="signup.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Playfair+Display+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      GET 5% OFF ON YOUR FIRST RENT. USE: "SEWABYN3SVIA" AT CHECKOUT
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <a href="index.html" class="signup-logo">Sewa by Nessvia</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="new-arrivals.html">New Arrivals</a></li>
+        <li><a href="highlights.html">Highlights</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li class="dropdown">
+              <a href="#" class="dropbtn">Categories <i class="fas fa-chevron-down"></i></a>
+              <div class="dropdown-content">
+                  <a href="all-collections.html">All Collection</a>
+                  <a href="one-set.html">One Set</a>
+                  <a href="dress.html">Dress</a>
+                  <a href="top.html">Top</a>
+                  <a href="index.html#jump-suit">Jump Suit</a>
+              </div>
+        </li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+      <div class="nav-right">
+        <input type="text" class="search-bar" placeholder="Search dress..." />
+        <div class="nav-icons">
+          <a href="cart.html" class="nav-icon-link">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <a href="wishlist.html" class="nav-icon-link">
+            <i class="fas fa-heart"></i>
+          </a>
+          <a href="login.html" class="nav-icon-link">
+            <i class="fas fa-user"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sign Up Container -->
+    <div class="signup-container">
+      <div class="signup-left">
+        <div class="signup-quote">
+          <h2>CREATE ACCOUNT</h2>
+          <div class="quote-text">
+            <p class="inspiration">
+              JOIN OUR COMMUNITY OF STYLE ENTHUSIASTS. YOUR DREAM DRESS AWAITS!
+            </p>
+            <p class="instagram-handle">@sewabynessvia</p>
+          </div>
+        </div>
+        <div class="signup-image">
+          <img
+            src="https://i.ibb.co.com/xKH0vVzL/12e2a329-1ef1-49a1-aa1a-7f8493838ddc-1.jpg"
+            alt="12e2a329 1ef1 49a1 aa1a 7f8493838ddc (1)"
+          />
+        </div>
+      </div>
+
+      <div class="signup-right">
+        <div class="signup-form-container">
+          <div class="welcome-message">
+            <h1>JOIN SEWA BY NESSVIA!</h1>
+            <p class="welcome-text">
+              Create an account to start renting beautiful dresses and be part
+              of our fashion community.
+            </p>
+          </div>
+
+          <form class="signup-form" id="signupForm">
+            <div class="form-group">
+              <label for="fullName">FULL NAME</label>
+              <div class="input-with-icon">
+                <i class="fas fa-user"></i>
+                <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  placeholder="Enter your full name..."
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">EMAIL ADDRESS</label>
+              <div class="input-with-icon">
+                <i class="fas fa-envelope"></i>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email..."
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">PHONE NUMBER</label>
+              <div class="input-with-icon">
+                <i class="fas fa-phone"></i>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+62 8xx xxxx xxxx"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Ganti bagian form-group untuk password menjadi: -->
+            <div class="form-group">
+              <label for="password">PASSWORD</label>
+              <div class="input-with-icon has-toggle">
+                <i class="fas fa-lock"></i>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Create a strong password..."
+                  required
+                />
+                <button
+                  type="button"
+                  class="toggle-password"
+                  id="togglePassword"
+                >
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
+              <div class="password-hints">
+                <small>• At least 8 characters</small><br />
+                <small>• Mix of letters and numbers</small>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="confirmPassword">CONFIRM PASSWORD</label>
+              <div class="input-with-icon">
+                <i class="fas fa-lock"></i>
+                <input
+                  type="password"
+                  id="confirmPassword"
+                  name="confirmPassword"
+                  placeholder="Re-enter your password..."
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="terms-checkbox">
+                <input type="checkbox" id="terms" name="terms" required />
+                <label for="terms">
+                  I agree to the
+                  <a href="terms.html" class="terms-link">Terms & Conditions</a>
+                  and
+                  <a href="privacy.html" class="terms-link">Privacy Policy</a>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="newsletter-checkbox">
+                <input
+                  type="checkbox"
+                  id="newsletter"
+                  name="newsletter"
+                  checked
+                />
+                <label for="newsletter">
+                  Subscribe to our newsletter for exclusive offers and updates
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-signup">CREATE ACCOUNT</button>
+
+            <div class="divider">
+              <span>or</span>
+            </div>
+
+            <button type="button" class="btn-google">
+              <i class="fab fa-google"></i>
+              SIGN UP WITH GOOGLE
+            </button>
+
+            <div class="login-link">
+              <p>
+                Already have an account? <a href="login.html">Sign In here</a>
+              </p>
+            </div>
+          </form>
+
+          <div class="back-to-home">
+            <a href="index.html">
+              <i class="fas fa-arrow-left"></i>
+              Back to Home
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">Sewa by Nessvia</div>
+          <p style="color: #ccc; font-size: 14px">Sewa.by.nessvia.id</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>CUSTOMER INFORMATION</h3>
+          <ul class="footer-links">
+            <li><a href="#">How to Rent</a></li>
+            <li><a href="#">Payment Information</a></li>
+            <li><a href="#">Shipping Information</a></li>
+            <li><a href="#">Return Information</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>INFORMATION</h3>
+          <ul class="footer-links">
+            <li><a href="#">Whatsapp: +6287876928748</a></li>
+            <li><a href="#">Email: Sewanessvia.id</a></li>
+          </ul>
+
+          <h3 style="margin-top: 30px">FOLLOW US ON INSTAGRAM</h3>
+          <p style="color: #ccc; font-size: 14px">@sewabynessvia</p>
+          <div class="social-icons" style="margin-top: 15px">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-tiktok"></i>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>SIGN UP AND SAVE</h3>
+          <p style="color: #ccc; font-size: 14px; margin-bottom: 15px">
+            Subscribe to get special offers, newest collection, and rent due.
+          </p>
+          <div class="newsletter">
+            <input type="email" placeholder="Enter your email..." />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-links" style="display: flex; gap: 150px">
+          <a href="#"
+            ><i class="fas fa-shipping-fast"></i> Shipping to Nusantara</a
+          >
+          <a href="#"><i class="fas fa-diamond"></i> Classy Collections</a>
+          <a href="#"
+            ><i class="fas fa-credit-card"></i> Multiple Payment Methods</a
+          >
+          <a href="#"><i class="fas fa-headset"></i> Fast Response Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Toggle password visibility - FIXED LOGIC
+        const togglePassword = document.getElementById('togglePassword');
+        const passwordInput = document.getElementById('password');
+
+        if (togglePassword && passwordInput) {
+          togglePassword.addEventListener('click', function () {
+            const type =
+              passwordInput.getAttribute('type') === 'password'
+                ? 'text'
+                : 'password';
+            passwordInput.setAttribute('type', type);
+
+            // PERBAIKAN: Logika icon yang benar
+            const icon = this.querySelector('i');
+            if (type === 'text') {
+              // Password TERLIHAT → mata terbuka (fa-eye)
+              icon.classList.remove('fa-eye-slash');
+              icon.classList.add('fa-eye');
+            } else {
+              // Password TERSEMBUNYI → mata silang (fa-eye-slash)
+              icon.classList.remove('fa-eye');
+              icon.classList.add('fa-eye-slash');
+            }
+          });
+        }
+
+        // Form validation and submission
+        const signupForm = document.getElementById('signupForm');
+        if (signupForm) {
+          signupForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Get form values
+            const fullName = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword =
+              document.getElementById('confirmPassword').value;
+            const terms = document.getElementById('terms').checked;
+
+            // Validation
+            if (
+              !fullName ||
+              !email ||
+              !phone ||
+              !password ||
+              !confirmPassword
+            ) {
+              showError('Please fill in all required fields');
+              return;
+            }
+
+            if (!terms) {
+              showError('Please accept the Terms & Conditions');
+              return;
+            }
+
+            if (password.length < 8) {
+              showError('Password must be at least 8 characters');
+              return;
+            }
+
+            if (password !== confirmPassword) {
+              showError('Passwords do not match');
+              return;
+            }
+
+            // Show loading state
+            const submitBtn = this.querySelector('.btn-signup');
+            const originalText = submitBtn.textContent;
+
+            submitBtn.innerHTML =
+              '<i class="fas fa-spinner fa-spin"></i> CREATING ACCOUNT...';
+            submitBtn.disabled = true;
+
+            // Simulate API call
+            setTimeout(() => {
+              // Simpan data user (dalam real app, ini akan ke backend)
+              const userData = {
+                name: fullName,
+                email: email,
+                phone: phone,
+                signedUp: new Date().toISOString(),
+              };
+
+              localStorage.setItem('userData', JSON.stringify(userData));
+              localStorage.setItem('isLoggedIn', 'true');
+
+              // Success animation
+              submitBtn.textContent = 'ACCOUNT CREATED! ✓';
+              submitBtn.style.backgroundColor = '#2ecc71';
+
+              // Redirect to login page after success
+              setTimeout(() => {
+                window.location.href = 'login.html';
+              }, 1500);
+            }, 2000);
+          });
+        }
+
+        // Google sign up button
+        const googleBtn = document.querySelector('.btn-google');
+        if (googleBtn) {
+          googleBtn.addEventListener('click', function () {
+            console.log('Google sign up clicked');
+            alert('Google sign up would be implemented here');
+          });
+        }
+
+        // Helper function to show errors
+        function showError(message) {
+          // Create error message element
+          let errorDiv = document.querySelector('.form-error');
+          if (!errorDiv) {
+            errorDiv = document.createElement('div');
+            errorDiv.className = 'form-error';
+            signupForm.insertBefore(errorDiv, signupForm.firstChild);
+          }
+
+          errorDiv.innerHTML = `<i class="fas fa-exclamation-circle"></i> ${message}`;
+          errorDiv.style.display = 'block';
+
+          // Remove error after 5 seconds
+          setTimeout(() => {
+            errorDiv.style.display = 'none';
+          }, 5000);
+        }
+
+        // Real-time password validation
+        const passwordField = document.getElementById('password');
+        const confirmField = document.getElementById('confirmPassword');
+
+        function validatePasswords() {
+          if (passwordField.value && confirmField.value) {
+            if (passwordField.value !== confirmField.value) {
+              confirmField.style.borderColor = '#ff4757';
+            } else {
+              confirmField.style.borderColor = '#2ecc71';
+            }
+          }
+        }
+
+        passwordField.addEventListener('input', validatePasswords);
+        confirmField.addEventListener('input', validatePasswords);
+      });
+    </script>
+  </body>
+</html>
